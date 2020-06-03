@@ -1,0 +1,14 @@
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\bin\Debug\DAO.dll.config
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\bin\Debug\DAO.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\bin\Debug\DAO.pdb
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\bin\Debug\DTO.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\bin\Debug\EntityFramework.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\bin\Debug\DTO.pdb
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\bin\Debug\EntityFramework.xml
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\obj\Debug\DAO.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DAO\obj\Debug\DAO.pdb

@@ -1,0 +1,70 @@
+C:\Users\Danbi\source\repos\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.exe.config
+C:\Users\Danbi\source\repos\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.exe
+C:\Users\Danbi\source\repos\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.pdb
+C:\Users\Danbi\source\repos\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csprojAssemblyReference.cache
+C:\Users\Danbi\source\repos\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.frmLogin.resources
+C:\Users\Danbi\source\repos\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.Properties.Resources.resources
+C:\Users\Danbi\source\repos\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.GenerateResource.cache
+C:\Users\Danbi\source\repos\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CoreCompileInputs.cache
+C:\Users\Danbi\source\repos\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.exe
+C:\Users\Danbi\source\repos\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.pdb
+C:\Users\Danbi\source\repos\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.frmDashBoard.resources
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.exe.config
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.exe
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.pdb
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csprojAssemblyReference.cache
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.frmDashBoard.resources
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.frmLogin.resources
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.Properties.Resources.resources
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.GenerateResource.cache
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.exe
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.pdb
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\bin\Debug\Guna.UI2.dll
+C:\Users\ASUS\OneDrive\Máy tính\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CopyComplete
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.exe.config
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.exe
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.pdb
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csprojAssemblyReference.cache
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.frmLogin.resources
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.Properties.Resources.resources
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.GenerateResource.cache
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CoreCompileInputs.cache
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CopyComplete
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.exe
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.pdb
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.frmLeTan.resources
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.UCDatPhong.resources
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.UCAccount.resources
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.UCDoiPass.resources
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.UCHoaDon.resources
+C:\Users\Danbi\Desktop\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.UCPhieuDV.resources
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.exe
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.pdb
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csprojAssemblyReference.cache
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.frmLeTan.resources
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.frmLogin.resources
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.Properties.Resources.resources
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.UCAccount.resources
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.UCDatPhong.resources
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.UCDoiPass.resources
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.UCHoaDon.resources
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.UCPhieuDV.resources
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.GenerateResource.cache
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CoreCompileInputs.cache
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CopyComplete
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.exe
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\obj\Debug\QL_KhachSan.pdb
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\DTO.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\DTO.pdb
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\BUS.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\DAO.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\EntityFramework.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\BUS.pdb
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\DAO.pdb
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\DAO.dll.config
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\EntityFramework.xml
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.exe.config
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\EntityFramework.SqlServer.xml

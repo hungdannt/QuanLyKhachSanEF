@@ -1,0 +1,14 @@
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\bin\Debug\BUS.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\bin\Debug\BUS.pdb
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\bin\Debug\DAO.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\bin\Debug\DTO.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\bin\Debug\EntityFramework.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\bin\Debug\DAO.pdb
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\bin\Debug\DAO.dll.config
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\bin\Debug\DTO.pdb
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\bin\Debug\EntityFramework.xml
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\obj\Debug\BUS.dll
+C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\BUS\obj\Debug\BUS.pdb
