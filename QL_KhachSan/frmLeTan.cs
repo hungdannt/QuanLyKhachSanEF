@@ -18,8 +18,8 @@ namespace QL_KhachSan
         }
         int mouseX = 0, mouseY = 0;
         bool mouseDown;
-      
 
+    
         private void MoveSidePanel(Control c)  // sáng chức năng khi được click
         {
             panel3.Height = c.Height;

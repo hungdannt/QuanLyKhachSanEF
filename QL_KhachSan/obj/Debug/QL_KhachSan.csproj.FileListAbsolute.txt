@@ -68,3 +68,32 @@ C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan
 C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.exe.config
 C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\QL_KhachSan.exe.config
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\QL_KhachSan.exe
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\QL_KhachSan.pdb
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\BUS.dll
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\DTO.dll
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\DAO.dll
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\EntityFramework.dll
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\BUS.pdb
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\DTO.pdb
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\DAO.pdb
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\DAO.dll.config
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\EntityFramework.xml
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.csprojAssemblyReference.cache
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmAlert.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmLeTan.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmLogin.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.Properties.Resources.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCAccount.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCDatPhong.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCDoiPass.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCHoaDon.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCPhieuDV.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.GenerateResource.cache
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CoreCompileInputs.cache
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CopyComplete
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.exe
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.pdb

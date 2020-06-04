@@ -76,7 +76,6 @@
             this.txtPass.Size = new System.Drawing.Size(443, 36);
             this.txtPass.TabIndex = 1;
             this.txtPass.UseSystemPasswordChar = true;
-
             // 
             // txtTen
             // 
@@ -88,7 +87,6 @@
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(443, 36);
             this.txtTen.TabIndex = 0;
-            this.txtTen.TextChanged += new System.EventHandler(this.txtTen_TextChanged);
             // 
             // label1
             // 
@@ -133,9 +131,9 @@
             // showPASS
             // 
             this.showPASS.Image = global::QL_KhachSan.Properties.Resources.eye__1_;
-            this.showPASS.Location = new System.Drawing.Point(599, 580);
+            this.showPASS.Location = new System.Drawing.Point(521, 580);
             this.showPASS.Name = "showPASS";
-            this.showPASS.Size = new System.Drawing.Size(47, 57);
+            this.showPASS.Size = new System.Drawing.Size(75, 36);
             this.showPASS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.showPASS.TabIndex = 4;
             this.showPASS.TabStop = false;
@@ -155,7 +153,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(686, 381);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+    
             // 
             // panel4
             // 
@@ -165,7 +163,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(614, 61);
             this.panel4.TabIndex = 0;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
             this.panel4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseMove);
             this.panel4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseUp);
             // 

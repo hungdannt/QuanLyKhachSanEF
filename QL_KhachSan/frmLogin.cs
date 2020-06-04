@@ -8,6 +8,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -31,11 +32,6 @@ namespace QL_KhachSan
         {
             lst = UserBUS.LayThongTinUser();
             sl = UserBUS.DemSoLuongTK();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -86,55 +82,69 @@ namespace QL_KhachSan
             }
             return sb.ToString();
         }
+        public void Alert(string msg, frmAlert.Type type)
+        {
+            frmAlert frm = new frmAlert();
+            frm.showAlert(msg, type);
+        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
-            for (int i = 0; i < sl; i++)
+            if (txtPass.Text == "")
             {
-                if (txtTen.Text == lst[i].TenDangNhap.ToString())
+                Alert("Bạn Chưa Nhập Pass Nhé !", frmAlert.Type.Warning);
+            }
+            else
+            {
+                bool check = false;
+                for (int i = 0; i < sl; i++)
                 {
-                    if (lst[i].MatKhau.ToString() == MaHoa(txtPass.Text))
+                    if (txtTen.Text == lst[i].TenDangNhap.ToString())
                     {
-                       
-                        MessageBox.Show("Dang Nhap Thanh Cong");
-                        if (UserBUS.GetChucVu(int.Parse(lst[i].MaChucVu.ToString())) == "letan")
+                        check = true;
+                        if (lst[i].MatKhau.ToString() == MaHoa(txtPass.Text))
                         {
-                            MessageBox.Show("May la letan");
-                            frmLeTan f = new frmLeTan();
-                            this.Hide();
-                            f.ShowDialog();
-                            this.Show();
-                            txtPass.Text = null;
+
+                            Alert("Đăng Nhập Thành Công !", frmAlert.Type.Success);
+                            if (UserBUS.GetChucVu(int.Parse(lst[i].MaChucVu.ToString())) == "letan")
+                            {
+
+                                this.Hide();
+                                new Thread(() => new frmLeTan().ShowDialog()).Start();
+                                
+                                this.Show();
+                                txtPass.Text = null;
+                            }
+                            if (UserBUS.GetChucVu(int.Parse(lst[i].MaChucVu.ToString())) == "admin")
+                            {
+
+                                
+                                this.Hide();
+                                new Thread(() => new frmLeTan()).Start();
+                                
+                                this.Show();
+
+                                txtPass.Text = null;
+                            }
+                            break;
                         }
-                        if (UserBUS.GetChucVu(int.Parse(lst[i].MaChucVu.ToString())) == "admin")
+                        else
                         {
-                            MessageBox.Show("may la admin");
-                            frmAdmin f = new frmAdmin();
-                            this.Hide();
-                            f.ShowDialog();
-                            this.Show();
-                            txtPass.Text = null;
+                            Alert("Nhập Sai Pass Rồi !", frmAlert.Type.Error);
+                            break;
                         }
-                        break;
-
-                        
-
                     }
                     else
                     {
-                        MessageBox.Show("Nhap Sai Pas ");
-                        break;
+                        check = false;
                     }
                 }
-                else
+                if (!check)
                 {
-                    MessageBox.Show("Khong ton tai user nay");
+                    Alert("Sai tên đăng nhập !", frmAlert.Type.Error);
+
                 }
-
             }
-
-           
         }
 
         private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
@@ -142,30 +152,23 @@ namespace QL_KhachSan
             Dispose();
         }
 
-        private void txtTen_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void showPASS_MouseDown(object sender, MouseEventArgs e)
         {
             txtPass.UseSystemPasswordChar = false;
 
         }
-
         private void showPASS_MouseUp(object sender, MouseEventArgs e)
         {
             txtPass.UseSystemPasswordChar = true;
 
         }
+        private void panel4_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+        }
 
-   
 
-    
+
+
     }
 }

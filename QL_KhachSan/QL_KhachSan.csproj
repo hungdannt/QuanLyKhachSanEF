@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlert.Designer.cs">
+      <DependentUpon>frmAlert.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     <Compile Include="UCPhieuDV.Designer.cs">
       <DependentUpon>UCPhieuDV.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmAlert.resx">
+      <DependentUpon>frmAlert.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLeTan.resx">
       <DependentUpon>frmLeTan.cs</DependentUpon>
     </EmbeddedResource>
@@ -309,6 +318,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eye %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
