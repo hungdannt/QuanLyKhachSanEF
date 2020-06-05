@@ -68,9 +68,6 @@ C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan
 C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\QL_KhachSan.exe.config
 C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\QL_KhachSan\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\QL_KhachSan.exe.config
-C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\QL_KhachSan.exe
-C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\QL_KhachSan.pdb
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\BUS.dll
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\DTO.dll
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\EntityFramework.SqlServer.dll
@@ -95,5 +92,9 @@ C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCPhi
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.GenerateResource.cache
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CoreCompileInputs.cache
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CopyComplete
-C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.exe
-C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.pdb
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\KhachSanPRO.exe.config
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\KhachSanPRO.exe
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\KhachSanPRO.pdb
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\KhachSanPRO.exe
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\KhachSanPRO.pdb
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmSplashScreen.resources

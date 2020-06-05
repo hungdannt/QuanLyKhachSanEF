@@ -173,6 +173,7 @@ namespace QL_KhachSan
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Close();
+
         }
 
         private void panel4_MouseDown(object sender, MouseEventArgs e)

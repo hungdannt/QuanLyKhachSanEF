@@ -2,14 +2,9 @@
 using DTO;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QL_KhachSan
@@ -17,12 +12,24 @@ namespace QL_KhachSan
     public partial class frmLogin : Form
 
     {
+     
+      
         public frmLogin()
         {
+            Thread thread = new Thread(new ThreadStart(() => Application.Run(new frmSplashScreen())));
+
+            thread.Start();
+
             InitializeComponent();
+            
+           
+
         }
+
+
         int mouseX = 0, mouseY = 0;
         bool mouseDown;
+
         List<UserDTO> lst;
         int sl;
 
@@ -30,8 +37,13 @@ namespace QL_KhachSan
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+
+            this.Hide();
             lst = UserBUS.LayThongTinUser();
             sl = UserBUS.DemSoLuongTK();
+            
+            
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -88,6 +100,11 @@ namespace QL_KhachSan
             frm.showAlert(msg, type);
         }
 
+        public void openform()
+        {
+            Form _form = new frmLeTan();
+            _form.ShowDialog();
+        }
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtPass.Text == "")
@@ -105,24 +122,28 @@ namespace QL_KhachSan
                         if (lst[i].MatKhau.ToString() == MaHoa(txtPass.Text))
                         {
 
+
                             Alert("Đăng Nhập Thành Công !", frmAlert.Type.Success);
                             if (UserBUS.GetChucVu(int.Parse(lst[i].MaChucVu.ToString())) == "letan")
                             {
 
                                 this.Hide();
                                 new Thread(() => new frmLeTan().ShowDialog()).Start();
-                                
+
                                 this.Show();
                                 txtPass.Text = null;
                             }
                             if (UserBUS.GetChucVu(int.Parse(lst[i].MaChucVu.ToString())) == "admin")
                             {
 
-                                
                                 this.Hide();
-                                new Thread(() => new frmLeTan()).Start();
-                                
-                                this.Show();
+                                Thread _thread = new Thread(openform);
+                                _thread.Start();
+
+
+
+
+
 
                                 txtPass.Text = null;
                             }
@@ -162,6 +183,14 @@ namespace QL_KhachSan
             txtPass.UseSystemPasswordChar = true;
 
         }
+
+        private void frmLogin_Shown(object sender, EventArgs e)
+        {
+
+          
+           
+        }
+
         private void panel4_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
