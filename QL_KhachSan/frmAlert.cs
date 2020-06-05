@@ -14,9 +14,10 @@ namespace QL_KhachSan
     public partial class frmAlert : Form
     {
        
-        public frmAlert()
+        public frmAlert(string msg, frmAlert.Type type)
         {
             InitializeComponent();
+            showAlert(msg, type);
         }
         public enum Action
         {
@@ -64,7 +65,7 @@ namespace QL_KhachSan
                     this.Left -= 3;
                     if (this.Opacity == 0.0)
                     {
-                        this.Close();
+                        this.Dispose();
                     }
                     break;
             }
@@ -82,7 +83,7 @@ namespace QL_KhachSan
             this.StartPosition = FormStartPosition.Manual;
             string fname;
 
-            for (int i = 1; i < 10; i++)
+            for (int i = 1; i < 20; i++)
             {
                 fname = "alert" + i.ToString();
                 frmAlert frm = (frmAlert)Application.OpenForms[fname];

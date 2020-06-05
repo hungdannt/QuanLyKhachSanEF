@@ -10,47 +10,34 @@ using System.Windows.Forms;
 namespace QL_KhachSan
 {
     public partial class frmLogin : Form
-
     {
-     
-      
+        #region Khởi tạo form
+        List<UserDTO> lst;
+        int sl;
         public frmLogin()
         {
             Thread thread = new Thread(new ThreadStart(() => Application.Run(new frmSplashScreen())));
-
             thread.Start();
-
             InitializeComponent();
-            
-           
-
         }
-
-
-        int mouseX = 0, mouseY = 0;
-        bool mouseDown;
-
-        List<UserDTO> lst;
-        int sl;
-
-
-
         private void frmLogin_Load(object sender, EventArgs e)
         {
 
             this.Hide();
             lst = UserBUS.LayThongTinUser();
-            sl = UserBUS.DemSoLuongTK();
-            
-            
-
+            sl = UserBUS.DemSoLuongTK(); 
         }
+        #endregion
 
+        #region Xử lý đóng form
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Close();
         }
-
+        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Dispose();
+        }
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult ret = MessageBox.Show(
@@ -67,7 +54,11 @@ namespace QL_KhachSan
                 e.Cancel = true;
             }
         }
+        #endregion
 
+        #region Hàm di chuyển vị trí form
+        int mouseX = 0, mouseY = 0;
+        bool mouseDown;
         private void panel4_MouseMove(object sender, MouseEventArgs e)
         {
             if (mouseDown)
@@ -77,11 +68,18 @@ namespace QL_KhachSan
                 this.SetDesktopLocation(mouseX, mouseY);
             }
         }
+        private void panel4_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+        }
 
         private void panel4_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
         }
+        #endregion
+
+        #region Giải mã mật khẩu
         public string MaHoa(string pass)
         {
             MD5 mh = MD5.Create();
@@ -94,22 +92,22 @@ namespace QL_KhachSan
             }
             return sb.ToString();
         }
+        #endregion
+
+        #region Hàm gọi MessageBox
         public void Alert(string msg, frmAlert.Type type)
         {
-            frmAlert frm = new frmAlert();
-            frm.showAlert(msg, type);
+            Thread aleart = new Thread(new ThreadStart(() => Application.Run(new frmAlert(msg, type))));
+            aleart.Start();
         }
+        #endregion
 
-        public void openform()
-        {
-            Form _form = new frmLeTan();
-            _form.ShowDialog();
-        }
+        #region Hàm xử lý sự kiện click đăng nhập
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtPass.Text == "")
             {
-                Alert("Bạn Chưa Nhập Pass Nhé !", frmAlert.Type.Warning);
+                Alert("Bạn Chưa Nhập Pass", frmAlert.Type.Warning);
             }
             else
             {
@@ -123,27 +121,26 @@ namespace QL_KhachSan
                         {
 
 
-                            Alert("Đăng Nhập Thành Công !", frmAlert.Type.Success);
-                            if (UserBUS.GetChucVu(int.Parse(lst[i].MaChucVu.ToString())) == "letan")
-                            {
-
-                                this.Hide();
-                                new Thread(() => new frmLeTan().ShowDialog()).Start();
-
-                                this.Show();
-                                txtPass.Text = null;
-                            }
+                            Alert("Đăng nhập thành công !", frmAlert.Type.Success);
                             if (UserBUS.GetChucVu(int.Parse(lst[i].MaChucVu.ToString())) == "admin")
                             {
 
                                 this.Hide();
-                                Thread _thread = new Thread(openform);
-                                _thread.Start();
+                                var frm = new frmAdmin();
+                                frm.ShowDialog();
+                                Alert("Đã đăng xuất!", frmAlert.Type.Info);
 
+                                this.Show();
+                                txtPass.Text = null;
+                            }
+                            if (UserBUS.GetChucVu(int.Parse(lst[i].MaChucVu.ToString())) == "letan")
+                            {
 
-
-
-
+                                this.Hide();
+                                var frm = new frmLeTan();
+                                frm.ShowDialog();
+                                Alert("Đã đăng xuất!", frmAlert.Type.Info);
+                                this.Show();
 
                                 txtPass.Text = null;
                             }
@@ -167,12 +164,10 @@ namespace QL_KhachSan
                 }
             }
         }
+        #endregion
 
-        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Dispose();
-        }
-
+        
+        #region Ẩn hiện pass 
         private void showPASS_MouseDown(object sender, MouseEventArgs e)
         {
             txtPass.UseSystemPasswordChar = false;
@@ -183,18 +178,10 @@ namespace QL_KhachSan
             txtPass.UseSystemPasswordChar = true;
 
         }
+        #endregion
 
-        private void frmLogin_Shown(object sender, EventArgs e)
-        {
+       
 
-          
-           
-        }
-
-        private void panel4_MouseDown(object sender, MouseEventArgs e)
-        {
-            mouseDown = true;
-        }
 
 
 
