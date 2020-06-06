@@ -79,20 +79,7 @@ namespace QL_KhachSan
         }
         #endregion
 
-        #region Giải mã mật khẩu
-        public string MaHoa(string pass)
-        {
-            MD5 mh = MD5.Create();
-            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(pass);
-            byte[] hash = mh.ComputeHash(inputBytes);
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < hash.Length; i++)
-            {
-                sb.Append(hash[i].ToString("X2"));
-            }
-            return sb.ToString();
-        }
-        #endregion
+  
 
         #region Hàm gọi MessageBox
         public void Alert(string msg, frmAlert.Type type)
@@ -117,7 +104,7 @@ namespace QL_KhachSan
                     if (txtTen.Text == lst[i].TenDangNhap.ToString())
                     {
                         check = true;
-                        if (lst[i].MatKhau.ToString() == MaHoa(txtPass.Text))
+                        if (lst[i].MatKhau.ToString() == UserBUS.MaHoa(txtPass.Text))
                         {
 
 

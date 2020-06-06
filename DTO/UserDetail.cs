@@ -10,10 +10,10 @@ namespace DTO
     {
 
         public int CMND { get; set; }
-        public string hoten { get; set; }
-        public Nullable<DateTime> ngaysinh { get; set; }
-        public Nullable<bool> sex { get; set; }
-        public string sdt { get; set; }
-        public string diachi { get; set; }    
+        public string HoTen { get; set; }
+        public Nullable<DateTime> NgaySinh { get; set; }
+        public String Sex { get; set; }
+        public string SDT { get; set; }
+        public string DiaChi { get; set; }    
     }
 }

@@ -32,7 +32,21 @@ namespace QL_KhachSan
 
         private void UCListAcc_Load(object sender, EventArgs e)
         {
-           
+            dgvListAcc.DataSource = UserBUS.LayThongTinUser();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = UserBUS.LayThongChiTietUser(187859120).HoTen;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            var frm = new frmAddAcc();
+            this.ParentForm.Opacity = 50;
+            frm.ShowDialog();
+            this.ParentForm.Opacity = 100;
+            dgvListAcc.Update();
         }
     }
 }

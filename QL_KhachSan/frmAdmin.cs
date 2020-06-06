@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +23,7 @@ namespace QL_KhachSan
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
         private void MoveSidePanel(Control c)  // sáng chức năng khi được click
         {
@@ -32,7 +34,7 @@ namespace QL_KhachSan
 
         private void frmAdmin_Load(object sender, EventArgs e)
         {
-            lbAvatarName.Text = cmnd.ToString();
+            lbAvatarName.Text = UserBUS.LayThongChiTietUser(cmnd).HoTen;
             timer1.Start();
             lbDate.Text = DateTime.Now.ToLongDateString();
             MoveSidePanel(btnHome);
@@ -55,8 +57,10 @@ namespace QL_KhachSan
             }
             else
             {
+              
                 UCListAcc.Instance.BringToFront();
             }
+
         }
 
         private void btnSetting_Click(object sender, EventArgs e)

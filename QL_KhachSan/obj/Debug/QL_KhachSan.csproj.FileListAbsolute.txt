@@ -100,3 +100,4 @@ C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\KhachSanPRO.pdb
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmSplashScreen.resources
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmAdmin.resources
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCListAcc.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmAddAcc.resources
