@@ -7,13 +7,13 @@
       <Schema Namespace="HotelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Account">
           <Key>
-            <PropertyRef Name="id" />
+            <PropertyRef Name="stt" />
           </Key>
-          <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="idGroup" Type="int" Nullable="false" />
-          <Property Name="soCMND" Type="int" Nullable="false" />
+          <Property Name="stt" Type="int" Nullable="false" />
+          <Property Name="cmnd" Type="int" />
           <Property Name="username" Type="nvarchar" MaxLength="50" />
-          <Property Name="pass" Type="nvarchar" MaxLength="100" />
+          <Property Name="pass" Type="nvarchar(max)" />
+          <Property Name="chucvu" Type="nvarchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="DichVu">
           <Key>
@@ -22,13 +22,6 @@
           <Property Name="maDichVu" Type="char" MaxLength="3" Nullable="false" />
           <Property Name="tenDichVu" Type="nvarchar" MaxLength="50" />
           <Property Name="donGia" Type="float" />
-        </EntityType>
-        <EntityType Name="Group">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="tenGroup" Type="nvarchar" MaxLength="30" Nullable="false" />
         </EntityType>
         <EntityType Name="HoaDon">
           <Key>
@@ -90,27 +83,15 @@
           <Property Name="sdt" Type="char" MaxLength="10" />
           <Property Name="diachi" Type="nvarchar" MaxLength="100" />
         </EntityType>
-        <Association Name="FK_Account_Group">
-          <End Role="Group" Type="Self.Group" Multiplicity="1" />
-          <End Role="Account" Type="Self.Account" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Group">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="Account">
-              <PropertyRef Name="idGroup" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Account_User">
-          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="0..1" />
           <End Role="Account" Type="Self.Account" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
               <PropertyRef Name="soCMND" />
             </Principal>
             <Dependent Role="Account">
-              <PropertyRef Name="soCMND" />
+              <PropertyRef Name="cmnd" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -177,17 +158,12 @@
         <EntityContainer Name="HotelModelStoreContainer">
           <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DichVu" EntityType="Self.DichVu" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Group" EntityType="Self.Group" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="HoaDon" EntityType="Self.HoaDon" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="KhachHang" EntityType="Self.KhachHang" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PhieuDichVu" EntityType="Self.PhieuDichVu" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PhieuThuePhong" EntityType="Self.PhieuThuePhong" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Phong" EntityType="Self.Phong" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_Account_Group" Association="Self.FK_Account_Group">
-            <End Role="Group" EntitySet="Group" />
-            <End Role="Account" EntitySet="Account" />
-          </AssociationSet>
           <AssociationSet Name="FK_Account_User" Association="Self.FK_Account_User">
             <End Role="User" EntitySet="User" />
             <End Role="Account" EntitySet="Account" />
@@ -220,14 +196,13 @@
       <Schema Namespace="HotelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Account">
           <Key>
-            <PropertyRef Name="id" />
+            <PropertyRef Name="stt" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="idGroup" Type="Int32" Nullable="false" />
-          <Property Name="soCMND" Type="Int32" Nullable="false" />
+          <Property Name="stt" Type="Int32" Nullable="false" />
+          <Property Name="cmnd" Type="Int32" />
           <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="pass" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Group" Relationship="Self.FK_Account_Group" FromRole="Account" ToRole="Group" />
+          <Property Name="pass" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="chucvu" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="User" Relationship="Self.FK_Account_User" FromRole="Account" ToRole="User" />
         </EntityType>
         <EntityType Name="DichVu">
@@ -238,14 +213,6 @@
           <Property Name="tenDichVu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="donGia" Type="Double" />
           <NavigationProperty Name="PhieuDichVus" Relationship="Self.FK_PhieuDichVu_DichVu" FromRole="DichVu" ToRole="PhieuDichVu" />
-        </EntityType>
-        <EntityType Name="Group">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="tenGroup" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Accounts" Relationship="Self.FK_Account_Group" FromRole="Group" ToRole="Account" />
         </EntityType>
         <EntityType Name="HoaDon">
           <Key>
@@ -317,27 +284,15 @@
           <Property Name="diachi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Accounts" Relationship="Self.FK_Account_User" FromRole="User" ToRole="Account" />
         </EntityType>
-        <Association Name="FK_Account_Group">
-          <End Role="Group" Type="Self.Group" Multiplicity="1" />
-          <End Role="Account" Type="Self.Account" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Group">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="Account">
-              <PropertyRef Name="idGroup" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Account_User">
-          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="0..1" />
           <End Role="Account" Type="Self.Account" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
               <PropertyRef Name="soCMND" />
             </Principal>
             <Dependent Role="Account">
-              <PropertyRef Name="soCMND" />
+              <PropertyRef Name="cmnd" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -404,17 +359,12 @@
         <EntityContainer Name="HotelEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Accounts" EntityType="Self.Account" />
           <EntitySet Name="DichVus" EntityType="Self.DichVu" />
-          <EntitySet Name="Groups" EntityType="Self.Group" />
           <EntitySet Name="HoaDons" EntityType="Self.HoaDon" />
           <EntitySet Name="KhachHangs" EntityType="Self.KhachHang" />
           <EntitySet Name="PhieuDichVus" EntityType="Self.PhieuDichVu" />
           <EntitySet Name="PhieuThuePhongs" EntityType="Self.PhieuThuePhong" />
           <EntitySet Name="Phongs" EntityType="Self.Phong" />
           <EntitySet Name="Users" EntityType="Self.User" />
-          <AssociationSet Name="FK_Account_Group" Association="Self.FK_Account_Group">
-            <End Role="Group" EntitySet="Groups" />
-            <End Role="Account" EntitySet="Accounts" />
-          </AssociationSet>
           <AssociationSet Name="FK_Account_User" Association="Self.FK_Account_User">
             <End Role="User" EntitySet="Users" />
             <End Role="Account" EntitySet="Accounts" />
@@ -449,11 +399,11 @@
           <EntitySetMapping Name="Accounts">
             <EntityTypeMapping TypeName="HotelModel.Account">
               <MappingFragment StoreEntitySet="Account">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="idGroup" ColumnName="idGroup" />
-                <ScalarProperty Name="soCMND" ColumnName="soCMND" />
+                <ScalarProperty Name="stt" ColumnName="stt" />
+                <ScalarProperty Name="cmnd" ColumnName="cmnd" />
                 <ScalarProperty Name="username" ColumnName="username" />
                 <ScalarProperty Name="pass" ColumnName="pass" />
+                <ScalarProperty Name="chucvu" ColumnName="chucvu" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -463,14 +413,6 @@
                 <ScalarProperty Name="maDichVu" ColumnName="maDichVu" />
                 <ScalarProperty Name="tenDichVu" ColumnName="tenDichVu" />
                 <ScalarProperty Name="donGia" ColumnName="donGia" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Groups">
-            <EntityTypeMapping TypeName="HotelModel.Group">
-              <MappingFragment StoreEntitySet="Group">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="tenGroup" ColumnName="tenGroup" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

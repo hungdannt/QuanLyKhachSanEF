@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class UserDTO
+    public class Acc
     {
         public string TenDangNhap { get; set; }
         public string MatKhau { get; set; }
-        public int MaChucVu { get; set; }
+        public string ChucVu { get; set; }
     }
 }

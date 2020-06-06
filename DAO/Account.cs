@@ -14,13 +14,12 @@ namespace DAO
     
     public partial class Account
     {
-        public int id { get; set; }
-        public int idGroup { get; set; }
-        public int soCMND { get; set; }
+        public int stt { get; set; }
+        public Nullable<int> cmnd { get; set; }
         public string username { get; set; }
         public string pass { get; set; }
+        public string chucvu { get; set; }
     
-        public virtual Group Group { get; set; }
         public virtual User User { get; set; }
     }
 }

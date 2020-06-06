@@ -12,7 +12,7 @@ namespace QL_KhachSan
     public partial class frmLogin : Form
     {
         #region Khởi tạo form
-        List<UserDTO> lst;
+        List<Acc> lst;
         int sl;
         public frmLogin()
         {
@@ -122,18 +122,18 @@ namespace QL_KhachSan
 
 
                             Alert("Đăng nhập thành công !", frmAlert.Type.Success);
-                            if (UserBUS.GetChucVu(int.Parse(lst[i].MaChucVu.ToString())) == "admin")
+                            if (lst[i].ChucVu == "Admin")
                             {
 
                                 this.Hide();
-                                var frm = new frmAdmin();
+                                var frm = new frmAdmin(187859120);
                                 frm.ShowDialog();
                                 Alert("Đã đăng xuất!", frmAlert.Type.Info);
 
                                 this.Show();
                                 txtPass.Text = null;
                             }
-                            if (UserBUS.GetChucVu(int.Parse(lst[i].MaChucVu.ToString())) == "letan")
+                            if (lst[i].ChucVu == "Lễ Tân")
                             {
 
                                 this.Hide();
@@ -166,7 +166,6 @@ namespace QL_KhachSan
         }
         #endregion
 
-        
         #region Ẩn hiện pass 
         private void showPASS_MouseDown(object sender, MouseEventArgs e)
         {
@@ -180,11 +179,6 @@ namespace QL_KhachSan
         }
         #endregion
 
-       
-
-
-
-
-
+ 
     }
 }

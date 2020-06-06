@@ -4,11 +4,11 @@
     <EntitySetMapping Name="Accounts">
       <EntityTypeMapping TypeName="HotelModel.Account">
         <MappingFragment StoreEntitySet="Account">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="idGroup" ColumnName="idGroup" />
-          <ScalarProperty Name="soCMND" ColumnName="soCMND" />
+          <ScalarProperty Name="stt" ColumnName="stt" />
+          <ScalarProperty Name="cmnd" ColumnName="cmnd" />
           <ScalarProperty Name="username" ColumnName="username" />
           <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="chucvu" ColumnName="chucvu" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -18,14 +18,6 @@
           <ScalarProperty Name="maDichVu" ColumnName="maDichVu" />
           <ScalarProperty Name="tenDichVu" ColumnName="tenDichVu" />
           <ScalarProperty Name="donGia" ColumnName="donGia" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Groups">
-      <EntityTypeMapping TypeName="HotelModel.Group">
-        <MappingFragment StoreEntitySet="Group">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="tenGroup" ColumnName="tenGroup" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

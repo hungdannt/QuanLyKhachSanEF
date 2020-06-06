@@ -27,7 +27,6 @@ namespace DAO
     
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<DichVu> DichVus { get; set; }
-        public virtual DbSet<Group> Groups { get; set; }
         public virtual DbSet<HoaDon> HoaDons { get; set; }
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
         public virtual DbSet<PhieuDichVu> PhieuDichVus { get; set; }

@@ -141,12 +141,21 @@
     <Compile Include="UCHoaDon.Designer.cs">
       <DependentUpon>UCHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCListAcc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCListAcc.Designer.cs">
+      <DependentUpon>UCListAcc.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCPhieuDV.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UCPhieuDV.Designer.cs">
       <DependentUpon>UCPhieuDV.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAlert.resx">
       <DependentUpon>frmAlert.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCHoaDon.resx">
       <DependentUpon>UCHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCListAcc.resx">
+      <DependentUpon>UCListAcc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCPhieuDV.resx">
       <DependentUpon>UCPhieuDV.cs</DependentUpon>
@@ -373,6 +385,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logoapp.ico" />
+    <None Include="Resources\move_96px.png" />
+    <None Include="Resources\settings_48px.png" />
+    <None Include="Resources\settings_100px.png" />
+    <None Include="Resources\logout_rounded_left_64px.png" />
+    <None Include="Resources\home_64px.png" />
+    <None Include="Resources\menu_100px.png" />
+    <None Include="Resources\home1.png" />
+    <None Include="Resources\home %281%29.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\browser.png" />
+    <None Include="Resources\person.png" />
+    <None Include="Resources\administrator.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

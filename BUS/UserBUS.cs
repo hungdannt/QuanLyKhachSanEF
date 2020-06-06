@@ -10,19 +10,17 @@ namespace BUS
 {
     public class UserBUS
     {
-        public static List<UserDTO> LayThongTinUser()
+        public static List<Acc> LayThongTinUser()
         {
             return UserDAO.LayThongTinUser();
         }
 
-        public static string GetChucVu(int machucvu)
-        {
-            return UserDAO.GetChucVu(machucvu);
-        }
 
         public static int DemSoLuongTK()
         {
             return UserDAO.DemSoLuongTK();
         }
+        
+
     }
 }

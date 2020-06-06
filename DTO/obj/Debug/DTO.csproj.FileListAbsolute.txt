@@ -4,3 +4,9 @@ C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DTO\obj\Deb
 C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DTO\obj\Debug\DTO.dll
 C:\Users\Blay\OneDrive - Danang University of Technology\QL_KhachSan\DTO\obj\Debug\DTO.pdb
+C:\Users\Blay\Documents\QuanLyKhachSanEF\DTO\bin\Debug\DTO.dll
+C:\Users\Blay\Documents\QuanLyKhachSanEF\DTO\bin\Debug\DTO.pdb
+C:\Users\Blay\Documents\QuanLyKhachSanEF\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Blay\Documents\QuanLyKhachSanEF\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Blay\Documents\QuanLyKhachSanEF\DTO\obj\Debug\DTO.dll
+C:\Users\Blay\Documents\QuanLyKhachSanEF\DTO\obj\Debug\DTO.pdb

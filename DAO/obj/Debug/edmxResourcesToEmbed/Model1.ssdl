@@ -2,13 +2,13 @@
 <Schema Namespace="HotelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="Account">
     <Key>
-      <PropertyRef Name="id" />
+      <PropertyRef Name="stt" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
-    <Property Name="idGroup" Type="int" Nullable="false" />
-    <Property Name="soCMND" Type="int" Nullable="false" />
+    <Property Name="stt" Type="int" Nullable="false" />
+    <Property Name="cmnd" Type="int" />
     <Property Name="username" Type="nvarchar" MaxLength="50" />
-    <Property Name="pass" Type="nvarchar" MaxLength="100" />
+    <Property Name="pass" Type="nvarchar(max)" />
+    <Property Name="chucvu" Type="nvarchar" MaxLength="20" />
   </EntityType>
   <EntityType Name="DichVu">
     <Key>
@@ -17,13 +17,6 @@
     <Property Name="maDichVu" Type="char" MaxLength="3" Nullable="false" />
     <Property Name="tenDichVu" Type="nvarchar" MaxLength="50" />
     <Property Name="donGia" Type="float" />
-  </EntityType>
-  <EntityType Name="Group">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="int" Nullable="false" />
-    <Property Name="tenGroup" Type="nvarchar" MaxLength="30" Nullable="false" />
   </EntityType>
   <EntityType Name="HoaDon">
     <Key>
@@ -85,27 +78,15 @@
     <Property Name="sdt" Type="char" MaxLength="10" />
     <Property Name="diachi" Type="nvarchar" MaxLength="100" />
   </EntityType>
-  <Association Name="FK_Account_Group">
-    <End Role="Group" Type="Self.Group" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Group">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idGroup" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_Account_User">
-    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
     <End Role="Account" Type="Self.Account" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="User">
         <PropertyRef Name="soCMND" />
       </Principal>
       <Dependent Role="Account">
-        <PropertyRef Name="soCMND" />
+        <PropertyRef Name="cmnd" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -172,17 +153,12 @@
   <EntityContainer Name="HotelModelStoreContainer">
     <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DichVu" EntityType="Self.DichVu" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Group" EntityType="Self.Group" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="HoaDon" EntityType="Self.HoaDon" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="KhachHang" EntityType="Self.KhachHang" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PhieuDichVu" EntityType="Self.PhieuDichVu" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PhieuThuePhong" EntityType="Self.PhieuThuePhong" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Phong" EntityType="Self.Phong" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_Account_Group" Association="Self.FK_Account_Group">
-      <End Role="Group" EntitySet="Group" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
     <AssociationSet Name="FK_Account_User" Association="Self.FK_Account_User">
       <End Role="User" EntitySet="User" />
       <End Role="Account" EntitySet="Account" />

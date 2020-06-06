@@ -2,14 +2,13 @@
 <Schema Namespace="HotelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Account">
     <Key>
-      <PropertyRef Name="id" />
+      <PropertyRef Name="stt" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="idGroup" Type="Int32" Nullable="false" />
-    <Property Name="soCMND" Type="Int32" Nullable="false" />
+    <Property Name="stt" Type="Int32" Nullable="false" />
+    <Property Name="cmnd" Type="Int32" />
     <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="pass" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Group" Relationship="Self.FK_Account_Group" FromRole="Account" ToRole="Group" />
+    <Property Name="pass" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="chucvu" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="User" Relationship="Self.FK_Account_User" FromRole="Account" ToRole="User" />
   </EntityType>
   <EntityType Name="DichVu">
@@ -20,14 +19,6 @@
     <Property Name="tenDichVu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="donGia" Type="Double" />
     <NavigationProperty Name="PhieuDichVus" Relationship="Self.FK_PhieuDichVu_DichVu" FromRole="DichVu" ToRole="PhieuDichVu" />
-  </EntityType>
-  <EntityType Name="Group">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="tenGroup" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="Accounts" Relationship="Self.FK_Account_Group" FromRole="Group" ToRole="Account" />
   </EntityType>
   <EntityType Name="HoaDon">
     <Key>
@@ -99,27 +90,15 @@
     <Property Name="diachi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Accounts" Relationship="Self.FK_Account_User" FromRole="User" ToRole="Account" />
   </EntityType>
-  <Association Name="FK_Account_Group">
-    <End Role="Group" Type="Self.Group" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Group">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idGroup" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_Account_User">
-    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
     <End Role="Account" Type="Self.Account" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="User">
         <PropertyRef Name="soCMND" />
       </Principal>
       <Dependent Role="Account">
-        <PropertyRef Name="soCMND" />
+        <PropertyRef Name="cmnd" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -186,17 +165,12 @@
   <EntityContainer Name="HotelEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Accounts" EntityType="Self.Account" />
     <EntitySet Name="DichVus" EntityType="Self.DichVu" />
-    <EntitySet Name="Groups" EntityType="Self.Group" />
     <EntitySet Name="HoaDons" EntityType="Self.HoaDon" />
     <EntitySet Name="KhachHangs" EntityType="Self.KhachHang" />
     <EntitySet Name="PhieuDichVus" EntityType="Self.PhieuDichVu" />
     <EntitySet Name="PhieuThuePhongs" EntityType="Self.PhieuThuePhong" />
     <EntitySet Name="Phongs" EntityType="Self.Phong" />
     <EntitySet Name="Users" EntityType="Self.User" />
-    <AssociationSet Name="FK_Account_Group" Association="Self.FK_Account_Group">
-      <End Role="Group" EntitySet="Groups" />
-      <End Role="Account" EntitySet="Accounts" />
-    </AssociationSet>
     <AssociationSet Name="FK_Account_User" Association="Self.FK_Account_User">
       <End Role="User" EntitySet="Users" />
       <End Role="Account" EntitySet="Accounts" />
