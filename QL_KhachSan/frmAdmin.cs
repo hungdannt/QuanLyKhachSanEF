@@ -38,6 +38,7 @@ namespace QL_KhachSan
             timer1.Start();
             lbDate.Text = DateTime.Now.ToLongDateString();
             MoveSidePanel(btnHome);
+            Opacity = 30;
         }
 
         private void btnHome_Click(object sender, EventArgs e)

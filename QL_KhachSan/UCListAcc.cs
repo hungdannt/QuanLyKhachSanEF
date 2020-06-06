@@ -43,10 +43,12 @@ namespace QL_KhachSan
         private void btnAdd_Click(object sender, EventArgs e)
         {
             var frm = new frmAddAcc();
-            this.ParentForm.Opacity = 50;
+            this.ParentForm.Opacity = 40;
+            this.ParentForm.Update();
             frm.ShowDialog();
-            this.ParentForm.Opacity = 100;
-            dgvListAcc.Update();
+            dgvListAcc.DataSource= UserBUS.LayThongTinUser();
+            
+            
         }
     }
 }

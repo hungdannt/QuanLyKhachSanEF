@@ -118,6 +118,11 @@ namespace QL_KhachSan
                                 Alert("Đã đăng xuất!", frmAlert.Type.Info);
 
                                 this.Show();
+                                lst = UserBUS.LayThongTinUser();
+                                if (lst[2].TenDangNhap == "hungdannt")
+                                {
+                                    Alert("con ca", frmAlert.Type.Warning);
+                                }
                                 txtPass.Text = null;
                             }
                             if (lst[i].ChucVu == "Lễ Tân")
