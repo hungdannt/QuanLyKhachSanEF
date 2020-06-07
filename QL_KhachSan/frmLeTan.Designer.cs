@@ -70,17 +70,17 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2587, 189);
+            this.panel1.Size = new System.Drawing.Size(2264, 165);
             this.panel1.TabIndex = 0;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Location = new System.Drawing.Point(203, 0);
+            this.panel4.Location = new System.Drawing.Point(178, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(2179, 59);
+            this.panel4.Size = new System.Drawing.Size(1907, 52);
             this.panel4.TabIndex = 9;
             this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
             this.panel4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseMove);
@@ -93,10 +93,10 @@
             this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuTextbox1.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(662, 63);
-            this.bunifuTextbox1.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            this.bunifuTextbox1.Location = new System.Drawing.Point(579, 55);
+            this.bunifuTextbox1.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
             this.bunifuTextbox1.Name = "bunifuTextbox1";
-            this.bunifuTextbox1.Size = new System.Drawing.Size(811, 81);
+            this.bunifuTextbox1.Size = new System.Drawing.Size(710, 71);
             this.bunifuTextbox1.TabIndex = 8;
             this.bunifuTextbox1.text = "Nhập Tên Khách Hàng";
             // 
@@ -106,9 +106,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(1712, 83);
+            this.label2.Location = new System.Drawing.Point(1498, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 59);
+            this.label2.Size = new System.Drawing.Size(204, 51);
             this.label2.TabIndex = 6;
             this.label2.Text = "Welcome: ";
             // 
@@ -118,9 +118,9 @@
             this.txtNameNV1.BackColor = System.Drawing.Color.Transparent;
             this.txtNameNV1.Font = new System.Drawing.Font("Comic Sans MS", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNameNV1.ForeColor = System.Drawing.Color.SpringGreen;
-            this.txtNameNV1.Location = new System.Drawing.Point(1995, 83);
+            this.txtNameNV1.Location = new System.Drawing.Point(1746, 73);
             this.txtNameNV1.Name = "txtNameNV1";
-            this.txtNameNV1.Size = new System.Drawing.Size(348, 60);
+            this.txtNameNV1.Size = new System.Drawing.Size(308, 53);
             this.txtNameNV1.TabIndex = 5;
             this.txtNameNV1.Text = "Trần Hưng Dân";
             // 
@@ -128,10 +128,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(2403, 40);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(2103, 35);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(134, 123);
+            this.pictureBox2.Size = new System.Drawing.Size(117, 108);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -142,9 +142,9 @@
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.SeaShell;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(163, 63);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(143, 55);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(376, 66);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(332, 59);
             this.bunifuCustomLabel1.TabIndex = 3;
             this.bunifuCustomLabel1.Text = "KHACHSANPRO";
             // 
@@ -153,10 +153,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-3, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(195, 168);
+            this.pictureBox1.Size = new System.Drawing.Size(171, 147);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -173,10 +173,10 @@
             this.panelMenu.Controls.Add(this.btnDatPhong);
             this.panelMenu.Controls.Add(this.panel3);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 189);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.panelMenu.Location = new System.Drawing.Point(0, 165);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(526, 1148);
+            this.panelMenu.Size = new System.Drawing.Size(460, 1005);
             this.panelMenu.TabIndex = 1;
             // 
             // btnLogout
@@ -200,14 +200,14 @@
             this.btnLogout.IconVisible = true;
             this.btnLogout.IconZoom = 90D;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(24, 954);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.btnLogout.Location = new System.Drawing.Point(21, 835);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLogout.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnLogout.OnHoverTextColor = System.Drawing.Color.Red;
             this.btnLogout.selected = false;
-            this.btnLogout.Size = new System.Drawing.Size(502, 171);
+            this.btnLogout.Size = new System.Drawing.Size(439, 150);
             this.btnLogout.TabIndex = 3;
             this.btnLogout.Text = "   Đăng Xuất";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -236,14 +236,14 @@
             this.btnDoiPass.IconVisible = true;
             this.btnDoiPass.IconZoom = 130D;
             this.btnDoiPass.IsTab = false;
-            this.btnDoiPass.Location = new System.Drawing.Point(24, 766);
-            this.btnDoiPass.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            this.btnDoiPass.Location = new System.Drawing.Point(21, 670);
+            this.btnDoiPass.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
             this.btnDoiPass.Name = "btnDoiPass";
             this.btnDoiPass.Normalcolor = System.Drawing.Color.Transparent;
             this.btnDoiPass.OnHovercolor = System.Drawing.Color.PaleVioletRed;
             this.btnDoiPass.OnHoverTextColor = System.Drawing.Color.Yellow;
             this.btnDoiPass.selected = false;
-            this.btnDoiPass.Size = new System.Drawing.Size(502, 171);
+            this.btnDoiPass.Size = new System.Drawing.Size(439, 150);
             this.btnDoiPass.TabIndex = 1;
             this.btnDoiPass.Text = " Đổi Mật Khẩu";
             this.btnDoiPass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -273,14 +273,14 @@
             this.btnAccount.IconVisible = true;
             this.btnAccount.IconZoom = 130D;
             this.btnAccount.IsTab = false;
-            this.btnAccount.Location = new System.Drawing.Point(24, 585);
-            this.btnAccount.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            this.btnAccount.Location = new System.Drawing.Point(21, 512);
+            this.btnAccount.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
             this.btnAccount.Name = "btnAccount";
             this.btnAccount.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAccount.OnHovercolor = System.Drawing.Color.PaleVioletRed;
             this.btnAccount.OnHoverTextColor = System.Drawing.Color.Yellow;
             this.btnAccount.selected = false;
-            this.btnAccount.Size = new System.Drawing.Size(502, 171);
+            this.btnAccount.Size = new System.Drawing.Size(439, 150);
             this.btnAccount.TabIndex = 1;
             this.btnAccount.Text = "   Tài Khoản";
             this.btnAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -309,14 +309,14 @@
             this.btnLapDV.IconVisible = true;
             this.btnLapDV.IconZoom = 130D;
             this.btnLapDV.IsTab = false;
-            this.btnLapDV.Location = new System.Drawing.Point(24, 393);
-            this.btnLapDV.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            this.btnLapDV.Location = new System.Drawing.Point(21, 344);
+            this.btnLapDV.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
             this.btnLapDV.Name = "btnLapDV";
             this.btnLapDV.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLapDV.OnHovercolor = System.Drawing.Color.PaleVioletRed;
             this.btnLapDV.OnHoverTextColor = System.Drawing.Color.Yellow;
             this.btnLapDV.selected = false;
-            this.btnLapDV.Size = new System.Drawing.Size(502, 171);
+            this.btnLapDV.Size = new System.Drawing.Size(439, 150);
             this.btnLapDV.TabIndex = 1;
             this.btnLapDV.Text = "  Lập Phiếu DV";
             this.btnLapDV.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -345,14 +345,14 @@
             this.btnLapHoaDon.IconVisible = true;
             this.btnLapHoaDon.IconZoom = 145D;
             this.btnLapHoaDon.IsTab = false;
-            this.btnLapHoaDon.Location = new System.Drawing.Point(24, 198);
-            this.btnLapHoaDon.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            this.btnLapHoaDon.Location = new System.Drawing.Point(21, 173);
+            this.btnLapHoaDon.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
             this.btnLapHoaDon.Name = "btnLapHoaDon";
             this.btnLapHoaDon.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLapHoaDon.OnHovercolor = System.Drawing.Color.PaleVioletRed;
             this.btnLapHoaDon.OnHoverTextColor = System.Drawing.Color.Yellow;
             this.btnLapHoaDon.selected = false;
-            this.btnLapHoaDon.Size = new System.Drawing.Size(502, 171);
+            this.btnLapHoaDon.Size = new System.Drawing.Size(439, 150);
             this.btnLapHoaDon.TabIndex = 1;
             this.btnLapHoaDon.Text = "Lập Hoá Đơn";
             this.btnLapHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -381,14 +381,14 @@
             this.btnDatPhong.IconVisible = true;
             this.btnDatPhong.IconZoom = 140D;
             this.btnDatPhong.IsTab = false;
-            this.btnDatPhong.Location = new System.Drawing.Point(24, 6);
-            this.btnDatPhong.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            this.btnDatPhong.Location = new System.Drawing.Point(21, 5);
+            this.btnDatPhong.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
             this.btnDatPhong.Name = "btnDatPhong";
             this.btnDatPhong.Normalcolor = System.Drawing.Color.Transparent;
             this.btnDatPhong.OnHovercolor = System.Drawing.Color.PaleVioletRed;
             this.btnDatPhong.OnHoverTextColor = System.Drawing.Color.Yellow;
             this.btnDatPhong.selected = false;
-            this.btnDatPhong.Size = new System.Drawing.Size(502, 171);
+            this.btnDatPhong.Size = new System.Drawing.Size(439, 150);
             this.btnDatPhong.TabIndex = 1;
             this.btnDatPhong.Text = "   Đặt Phòng";
             this.btnDatPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -399,10 +399,10 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.panel3.Location = new System.Drawing.Point(3, 585);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.panel3.Location = new System.Drawing.Point(3, 512);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(19, 171);
+            this.panel3.Size = new System.Drawing.Size(17, 150);
             this.panel3.TabIndex = 0;
             // 
             // bo1
@@ -423,25 +423,25 @@
             // panelNV
             // 
             this.panelNV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelNV.Location = new System.Drawing.Point(526, 189);
+            this.panelNV.Location = new System.Drawing.Point(460, 165);
             this.panelNV.Name = "panelNV";
-            this.panelNV.Size = new System.Drawing.Size(2061, 1148);
+            this.panelNV.Size = new System.Drawing.Size(1804, 1005);
             this.panelNV.TabIndex = 2;
             // 
             // frmLeTan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(2587, 1337);
+            this.ClientSize = new System.Drawing.Size(2264, 1170);
             this.Controls.Add(this.panelNV);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "frmLeTan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lễ Tân";

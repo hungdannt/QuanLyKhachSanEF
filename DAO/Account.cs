@@ -21,5 +21,6 @@ namespace DAO
         public string chucvu { get; set; }
     
         public virtual User User { get; set; }
+        
     }
 }

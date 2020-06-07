@@ -360,7 +360,7 @@
             this.panelNV.Size = new System.Drawing.Size(1279, 801);
             this.panelNV.TabIndex = 4;
             // 
-            // frmAdmin
+            // frmad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -370,10 +370,9 @@
             this.Controls.Add(this.panelNV);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmAdmin";
+            this.Name = "frmad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lí tài khoản";
             this.Load += new System.EventHandler(this.frmAdmin_Load);

@@ -3,6 +3,7 @@ using DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,15 @@ namespace BUS
         {
             return UserDAO.LayThongTinUser();
         }
+        public static Acc LayThongTinUserTheoID(int key)
+        {
+            return UserDAO.LayThongTinUserTheoID(key);
+        }
+        public static void AccountUpdate(Acc a)
+        {
+            UserDAO.AccountUpdate(a);
+
+        }
         public static UserDetail LayThongChiTietUser(int cmnd)
         {
             return UserDAO.LayThongTinChiTietUser(cmnd);
@@ -23,6 +33,20 @@ namespace BUS
         public static int DemSoLuongTK()
         {
             return UserDAO.DemSoLuongTK();
+        }
+        public static bool DelAcc(int key)
+        {
+            try
+            {
+                UserDAO.DelAcc(key);
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+                
         }
         #region Giải mã mật khẩu
         public static string MaHoa(string pass)
@@ -49,8 +73,14 @@ namespace BUS
                 account.username = acc.TenDangNhap;
                 account.pass = acc.MatKhau;
                 account.chucvu = acc.ChucVu;
-                UserDAO.AddAcc(account);
-                return true;
+                if (UserDAO.AddAcc(account))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             catch (Exception)
             {

@@ -394,6 +394,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logoapp.ico" />
+    <None Include="Resources\add_60px.png" />
+    <None Include="Resources\delete_bin_100px.png" />
+    <None Include="Resources\edit_50px.png" />
+    <None Include="Resources\edit_24px1.png" />
+    <None Include="Resources\edit_24px.png" />
     <None Include="Resources\move_96px.png" />
     <None Include="Resources\settings_48px.png" />
     <None Include="Resources\settings_100px.png" />

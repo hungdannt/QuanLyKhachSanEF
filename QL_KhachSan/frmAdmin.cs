@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,7 +21,13 @@ namespace QL_KhachSan
             this.cmnd = cmnd;
             InitializeComponent();
         }
-
+        #region Hàm gọi MessageBox
+        public void Alert(string msg, frmAlert.Type type)
+        {
+            Thread aleart = new Thread(new ThreadStart(() => Application.Run(new frmAlert(msg, type))));
+            aleart.Start();
+        }
+        #endregion
         private void label1_Click(object sender, EventArgs e)
         {
             

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
+using System.Data.Entity.Migrations;
 
 namespace DAO
 {
@@ -73,5 +74,35 @@ namespace DAO
 
             }      
         }
+        public static void DelAcc(int key)
+        {
+            var itemToRemove = context.Accounts.SingleOrDefault(x => x.stt == key);
+            context.Accounts.Remove(itemToRemove);
+            context.SaveChanges();
+        }
+        public static Acc LayThongTinUserTheoID(int stt)
+        {
+            Acc acc = new Acc();
+            var item = context.Accounts.SingleOrDefault(x => x.stt == stt);
+            acc.CMND = (int)item.cmnd;
+            acc.ChucVu = item.chucvu;
+            acc.MatKhau = item.pass;
+            acc.STT = item.stt;
+            acc.TenDangNhap = item.username;
+            return acc;
+            
+        }
+        public static void AccountUpdate(Acc acc)
+        {
+            Account account = new Account();
+            account.chucvu = acc.ChucVu;
+            account.cmnd = acc.CMND;
+            account.pass = acc.MatKhau;
+            account.stt = acc.STT;
+            account.username = acc.TenDangNhap;
+            context.Accounts.AddOrUpdate(account);
+            context.SaveChanges();
+        }
+
     }
 }
