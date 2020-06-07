@@ -19,7 +19,7 @@ namespace QL_KhachSan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAdmin(187859120));
+            Application.Run(new frmLogin());
         }
 
 

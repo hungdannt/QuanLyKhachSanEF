@@ -42,7 +42,6 @@ namespace QL_KhachSan
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListAcc)).BeginInit();
@@ -53,7 +52,7 @@ namespace QL_KhachSan
             label1.BackColor = System.Drawing.Color.DodgerBlue;
             label1.Dock = System.Windows.Forms.DockStyle.Top;
             label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            label1.Font = new System.Drawing.Font("Cambria", 17.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.Font = new System.Drawing.Font("Cambria", 17.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             label1.Location = new System.Drawing.Point(0, 0);
             label1.Name = "label1";
@@ -82,7 +81,6 @@ namespace QL_KhachSan
             this.Column1,
             this.Column2,
             this.Column3,
-            this.Column4,
             this.Column5});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -282,17 +280,6 @@ namespace QL_KhachSan
             this.Column3.ReadOnly = true;
             this.Column3.Width = 250;
             // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column4.DataPropertyName = "MatKhau";
-            this.Column4.FillWeight = 48.41225F;
-            this.Column4.HeaderText = "Mật Khẩu Mã Hóa";
-            this.Column4.MinimumWidth = 9;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 470;
-            // 
             // Column5
             // 
             this.Column5.DataPropertyName = "ChucVu";
@@ -331,7 +318,6 @@ namespace QL_KhachSan
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
     }
 }

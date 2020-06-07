@@ -315,10 +315,10 @@
             // lbDate
             // 
             this.lbDate.AutoSize = true;
-            this.lbDate.Font = new System.Drawing.Font("Consolas", 14.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDate.Location = new System.Drawing.Point(6, 6);
+            this.lbDate.Font = new System.Drawing.Font("Consolas", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDate.Location = new System.Drawing.Point(6, 9);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(169, 40);
+            this.lbDate.Size = new System.Drawing.Size(153, 37);
             this.lbDate.TabIndex = 7;
             this.lbDate.Text = "00:00:00";
             // 
@@ -360,7 +360,7 @@
             this.panelNV.Size = new System.Drawing.Size(1279, 801);
             this.panelNV.TabIndex = 4;
             // 
-            // frmad
+            // frmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -372,7 +372,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmad";
+            this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lí tài khoản";
             this.Load += new System.EventHandler(this.frmAdmin_Load);

@@ -147,6 +147,12 @@
     <Compile Include="UCHoaDon.Designer.cs">
       <DependentUpon>UCHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCListNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCListNhanVien.Designer.cs">
+      <DependentUpon>UCListNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCListAcc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -193,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCHoaDon.resx">
       <DependentUpon>UCHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCListNhanVien.resx">
+      <DependentUpon>UCListNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCListAcc.resx">
       <DependentUpon>UCListAcc.cs</DependentUpon>
