@@ -41,12 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_Account.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserBUS.cs" />
+    <Compile Include="BUS_User.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">
-      <Project>{25d3116a-e9ba-403b-b991-a1be140a2c07}</Project>
+      <Project>{a720bd09-50c2-4f34-84d0-c8ac3891ef75}</Project>
       <Name>DAO</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">

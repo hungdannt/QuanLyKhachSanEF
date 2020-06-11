@@ -92,7 +92,6 @@ C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCPhi
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.GenerateResource.cache
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CoreCompileInputs.cache
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.csproj.CopyComplete
-C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\KhachSanPRO.exe.config
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\KhachSanPRO.exe
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\KhachSanPRO.pdb
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\KhachSanPRO.exe
@@ -101,4 +100,4 @@ C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmSp
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmAdmin.resources
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCListAcc.resources
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmAddAcc.resources
-C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCHoSoChiTiet.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCListNhanVien.resources

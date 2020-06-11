@@ -70,7 +70,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::QL_KhachSan.Properties.Resources.icons8_cancel_25px;
-            this.pictureBox2.Location = new System.Drawing.Point(407, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(481, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(26, 30);
             this.pictureBox2.TabIndex = 3;
@@ -86,14 +86,14 @@
             this.panel1.Controls.Add(this.lblMsg);
             this.panel1.Location = new System.Drawing.Point(69, 16);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(322, 36);
+            this.panel1.Size = new System.Drawing.Size(409, 36);
             this.panel1.TabIndex = 4;
             // 
             // frmAlert
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(449, 64);
+            this.ClientSize = new System.Drawing.Size(508, 64);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);

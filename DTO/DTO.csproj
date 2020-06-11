@@ -42,8 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Acc.cs" />
-    <Compile Include="UserDetail.cs" />
+    <Compile Include="DTO_Account.cs" />
+    <Compile Include="DTO_User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
