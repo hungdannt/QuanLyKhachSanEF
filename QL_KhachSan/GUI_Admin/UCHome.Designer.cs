@@ -128,7 +128,6 @@
             this.txtSLLeTan.TabIndex = 0;
             this.txtSLLeTan.Text = "100";
             this.txtSLLeTan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.txtSLLeTan.Click += new System.EventHandler(this.txtSLLeTan_Click);
             // 
             // txtSLAdmin
             // 

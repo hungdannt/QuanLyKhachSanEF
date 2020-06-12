@@ -113,7 +113,7 @@ namespace QL_KhachSan
                             {
 
                                 this.Hide();
-                                var frm = new frmAdmin(187859120);
+                                var frm = new frmAdmin(lst[i].STT);
                                 frm.ShowDialog();
                                 Alert("Đã đăng xuất!", frmAlert.Type.Info);
 

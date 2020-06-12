@@ -16,10 +16,12 @@ namespace QL_KhachSan
 {
     public partial class frmAdmin : Form
     {
-        private int cmnd;
-        public frmAdmin(int cmnd)
+        private int stt;
+        private DTO_Account thisacc;
+        public frmAdmin(int stt)
         {
-            this.cmnd = cmnd;
+            this.stt = stt;
+            this.thisacc = BUS_Account.GetAccount(stt);
             InitializeComponent();
         }
         #region Hàm gọi MessageBox
@@ -42,7 +44,7 @@ namespace QL_KhachSan
 
         private void frmAdmin_Load(object sender, EventArgs e)
         {
-            lbAvatarName.Text = BUS_User.GetUser(cmnd).HoTen;
+            lbAvatarName.Text = BUS_User.GetUser(thisacc.CMND).HoTen;
             timer1.Start();
             lbDate.Text = DateTime.Now.ToLongDateString();
             MoveSidePanel(btnHome);
@@ -100,7 +102,7 @@ namespace QL_KhachSan
                 panel6.Width = 9;
             }
             MoveSidePanel(btnSetting);
-            var frm = new frmAddUser(cmnd);
+            var frm = new frmAddUser(thisacc.CMND);
             this.Opacity = .55;
             frm.ShowDialog();
             this.Opacity = 1;

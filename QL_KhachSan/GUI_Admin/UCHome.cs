@@ -66,12 +66,8 @@ namespace QL_KhachSan.GUI_Admin
             txtSLLeTan.Text = BUS_Account.GetAllAccount().Where(p => p.ChucVu == "Lễ Tân").ToList().Count().ToString();
             txtSLKinhDoanh.Text = BUS_Account.GetAllAccount().Where(p => p.ChucVu == "Kinh Doanh").ToList().Count().ToString();
             txtSLTK.Text = BUS_Account.GetAllAccount().Count().ToString();
-            
-        }
-
-        private void txtSLLeTan_Click(object sender, EventArgs e)
-        {
 
         }
+
     }
 }
