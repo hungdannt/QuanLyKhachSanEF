@@ -120,6 +120,10 @@ namespace QL_KhachSan
 
 
             }
+            else
+            {
+                Alert("Hãy chọn dòng cần sửa", frmAlert.Type.Info);
+            }
 
 
         }

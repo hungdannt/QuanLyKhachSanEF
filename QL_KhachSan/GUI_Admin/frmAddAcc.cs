@@ -80,7 +80,7 @@ namespace QL_KhachSan
                 {
                     Alert("Vui lòng điền đầy đủ", frmAlert.Type.Info);
                 }
-                if (txtPass.Text.Equals(txtPassRepeat.Text))
+                if (txtPass.Text.Equals(txtPassRepeat.Text) && txtPassRepeat.Text != "")
                 {
                     DTO_Account acc = new DTO_Account();
                     int stt = BUS_Account.GetAllAccount().Count();
@@ -162,11 +162,15 @@ namespace QL_KhachSan
 
         private void txtTenDangNhap_OnValueChanged(object sender, EventArgs e)
         {
-            errorProvider1.SetError(txtTenDangNhap, "");
-            if (BUS_Account.GetAllAccount().SingleOrDefault(p => p.TenDangNhap == txtTenDangNhap.Text) != null)
+            if (key == 0)
             {
-                errorProvider1.SetError(txtTenDangNhap, "Tên đăng nhập đã tồn tại, xin nhập lại !");
+                errorProvider1.SetError(txtTenDangNhap, "");
+                if (BUS_Account.GetAllAccount().SingleOrDefault(p => p.TenDangNhap == txtTenDangNhap.Text) != null)
+                {
+                    errorProvider1.SetError(txtTenDangNhap, "Tên đăng nhập đã tồn tại, xin nhập lại !");
+                }
             }
+           
         }
 
     }

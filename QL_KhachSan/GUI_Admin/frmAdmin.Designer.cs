@@ -123,7 +123,7 @@
             // 
             this.lbTime.AutoSize = true;
             this.lbTime.Font = new System.Drawing.Font("Consolas", 14.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTime.Location = new System.Drawing.Point(49, 766);
+            this.lbTime.Location = new System.Drawing.Point(33, 769);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(169, 40);
             this.lbTime.TabIndex = 7;
