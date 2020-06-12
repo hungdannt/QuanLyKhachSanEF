@@ -1,5 +1,6 @@
 ﻿using BUS;
 using DTO;
+using QL_KhachSan.GUI_Admin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,7 +46,11 @@ namespace QL_KhachSan
             timer1.Start();
             lbDate.Text = DateTime.Now.ToLongDateString();
             MoveSidePanel(btnHome);
-            Opacity = 30;
+
+            UCHome.Instance.Dock = DockStyle.Fill;
+            panelNV.Controls.Add(UCHome.Instance);
+            UCHome.Instance.BringToFront();
+            
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -55,6 +60,17 @@ namespace QL_KhachSan
             {
                 panel6.Visible = false;
                 panel6.Width = 9;
+            }
+            if (!panelNV.Controls.Contains(UCHome.Instance))
+            {
+                UCHome.Instance.Dock = DockStyle.Fill;
+                panelNV.Controls.Add(UCHome.Instance);
+                UCHome.Instance.BringToFront();
+
+            }
+            else
+            {
+                UCHome.Instance.BringToFront();
             }
         }
 
@@ -84,6 +100,13 @@ namespace QL_KhachSan
                 panel6.Width = 9;
             }
             MoveSidePanel(btnSetting);
+            var frm = new frmAddUser(cmnd);
+            this.Opacity = .55;
+            frm.ShowDialog();
+            this.Opacity = 1;
+
+
+
 
         }
         #region Hàm di chuyển vị trí form
@@ -178,7 +201,11 @@ namespace QL_KhachSan
             }
         }
 
-      
+       
+
+  
+
+        
 
         private void panelmove_MouseUp(object sender, MouseEventArgs e)
         {

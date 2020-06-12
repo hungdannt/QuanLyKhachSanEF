@@ -139,8 +139,8 @@
   <data name="multiply_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multiply_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="subtract_64px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\subtract_64px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Transfile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Transfile1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,11 +148,17 @@
   <data name="settings_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="240_F_344037226_QOnUecDHU8jTzKDpIz87Xx7LDIlTtVX9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\240_F_344037226_QOnUecDHU8jTzKDpIz87Xx7LDIlTtVX9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logoapp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logoapp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="240_F_344037226_QOnUecDHU8jTzKDpIz87Xx7LDIlTtVX9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\240_F_344037226_QOnUecDHU8jTzKDpIz87Xx7LDIlTtVX9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lofgoapp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lofgoapp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,11 +199,11 @@
   <data name="Endless River" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Endless River.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="phone_52px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone_52px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="yes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="move_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\move_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="edit_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit_24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,14 +232,11 @@
   <data name="yes (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yes (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="business (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\business (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="subtract_64px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subtract_64px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="construction" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\construction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,11 +301,11 @@
   <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="loupe2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loupe2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="delete_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="male" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="colorful-gradient-liquid-shapes-background_23-2148250143" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\colorful-gradient-liquid-shapes-background_23-2148250143.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,8 +313,11 @@
   <data name="logologindoan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logologindoan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="loupe2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loupe2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="edit_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -322,20 +328,23 @@
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="checkmark_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkmark_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="information_200px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\information_200px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="checkmark_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\checkmark_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Transfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Transfile.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="move_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\move_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="photo-1557683311-eac922347aa12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\photo-1557683311-eac922347aa1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -343,7 +352,7 @@
   <data name="key1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\key1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="female" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

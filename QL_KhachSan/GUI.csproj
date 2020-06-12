@@ -80,6 +80,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI_Admin\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Admin\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_Admin\frmAddAcc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="GUI_Admin\frmAdmin.Designer.cs">
       <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Admin\UCHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_Admin\UCHome.Designer.cs">
+      <DependentUpon>UCHome.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_LeTan\frmLeTan.cs">
       <SubType>Form</SubType>
@@ -123,10 +135,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="GUI_Admin\UCAccount.cs">
+    <Compile Include="GUI_LeTan\UCAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI_Admin\UCAccount.Designer.cs">
+    <Compile Include="GUI_LeTan\UCAccount.Designer.cs">
       <DependentUpon>UCAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_LeTan\UCDatPhong.cs">
@@ -165,6 +177,9 @@
     <Compile Include="GUI_LeTan\UCPhieuDV.Designer.cs">
       <DependentUpon>UCPhieuDV.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI_Admin\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_Admin\frmAddAcc.resx">
       <DependentUpon>frmAddAcc.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAlert.resx">
       <DependentUpon>frmAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\UCHome.resx">
+      <DependentUpon>UCHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_LeTan\frmLeTan.resx">
       <DependentUpon>frmLeTan.cs</DependentUpon>
@@ -188,7 +206,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI_Admin\UCAccount.resx">
+    <EmbeddedResource Include="GUI_LeTan\UCAccount.resx">
       <DependentUpon>UCAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_LeTan\UCDatPhong.resx">
@@ -403,6 +421,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logoapp.ico" />
+    <None Include="Resources\female.png" />
+    <None Include="Resources\male.png" />
+    <None Include="Resources\phone_52px.png" />
     <None Include="Resources\add_60px.png" />
     <None Include="Resources\delete_bin_100px.png" />
     <None Include="Resources\edit_50px.png" />

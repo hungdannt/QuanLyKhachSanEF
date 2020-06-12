@@ -49,7 +49,7 @@ namespace DAO
             u.SDT = a.SDT;
             u.NgaySinh = a.NgaySinh;
             u.HoTen = a.HoTen;
-            u.GioiTinh = u.GioiTinh;
+            u.GioiTinh = a.Sex;
             u.InsertUpdate();
         }
        

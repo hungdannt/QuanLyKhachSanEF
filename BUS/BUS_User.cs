@@ -33,9 +33,9 @@ namespace BUS
         {
             User.Delete(cmnd);
         }
+    
 
-   
-       
-       
+
+
     }
 }

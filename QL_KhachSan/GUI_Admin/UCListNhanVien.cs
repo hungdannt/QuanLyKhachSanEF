@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using BUS;
-using System.Threading;
+﻿using BUS;
 using DTO;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Threading;
+using System.Windows.Forms;
 
 namespace QL_KhachSan
 {
@@ -30,19 +25,19 @@ namespace QL_KhachSan
         public UCListNhanVien()
         {
             InitializeComponent();
-            dgvListAcc.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            dgvListAcc.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dgvListAcc.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
-            dgvListAcc.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dgvListAcc.BackgroundColor = Color.White;
+            dgvListNV.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dgvListNV.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvListNV.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            dgvListNV.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dgvListNV.BackgroundColor = Color.White;
 
-            dgvListAcc.EnableHeadersVisualStyles = false;
-            dgvListAcc.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dgvListAcc.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
-            dgvListAcc.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvListNV.EnableHeadersVisualStyles = false;
+            dgvListNV.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvListNV.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dgvListNV.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
-     
+
         #region Hàm gọi MessageBox
         public void Alert(string msg, frmAlert.Type type)
         {
@@ -59,13 +54,11 @@ namespace QL_KhachSan
         {
 
 
-            var frm = new frmAddAcc(0);
+            var frm = new frmAddUser(0);
             this.ParentForm.Opacity = .55;
             frm.ShowDialog();
             this.ParentForm.Opacity = 1;
-
-
-            List<DTO_User> lst = BUS_User.GetAllUser();
+            dgvListNV.DataSource = BUS_User.GetAllUser();
 
 
         }
@@ -78,7 +71,7 @@ namespace QL_KhachSan
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-            DataGridViewSelectedRowCollection r = dgvListAcc.SelectedRows;
+            DataGridViewSelectedRowCollection r = dgvListNV.SelectedRows;
             if (r.Count == 1)
             {
                 int key = Convert.ToInt32(r[0].Cells["Column1"].Value.ToString());
@@ -86,7 +79,7 @@ namespace QL_KhachSan
                 {
                     BUS_User.Delete(key);
                     Alert("Đã xóa thành công ^^", frmAlert.Type.Success);
-                    dgvListAcc.DataSource = BUS_User.GetAllUser();
+                    dgvListNV.DataSource = BUS_User.GetAllUser();
                 }
                 catch (Exception)
                 {
@@ -106,18 +99,18 @@ namespace QL_KhachSan
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            DataGridViewSelectedRowCollection r = dgvListAcc.SelectedRows;
+            DataGridViewSelectedRowCollection r = dgvListNV.SelectedRows;
             if (r.Count == 1)
             {
-                int key = Convert.ToInt32(r[0].Cells["Column1"].Value.ToString());
-                var frm = new frmAddAcc(key);
+                int cmnd = Convert.ToInt32(r[0].Cells["Column1"].Value.ToString());
+                var frm = new frmAddUser(cmnd);
                 this.ParentForm.Opacity = .55;
                 frm.ShowDialog();
                 this.ParentForm.Opacity = 1;
-                dgvListAcc.DataSource = BUS_User.GetAllUser();
+                dgvListNV.DataSource = BUS_User.GetAllUser();
 
             }
-              
+
 
         }
 
@@ -139,7 +132,34 @@ namespace QL_KhachSan
             //    }
             //}
 
-            dgvListAcc.DataSource = BUS_User.GetAllUser();
+            dgvListNV.DataSource = BUS_User.GetAllUser();
+        }
+
+        private void dgvListAcc_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dgvListNV.Columns[e.ColumnIndex].Name.Equals("sex"))
+            {
+                bool a = (bool)e.Value;
+                if (a)
+                {
+                    e.Value = "Nam";
+                }
+                else if (!a)
+                {
+                    e.Value = "Nữ";
+                }
+            }
+
+            if (dgvListNV.Columns[e.ColumnIndex].Name.Equals("ngaysinh"))
+            {
+                e.Value = ((DateTime)e.Value).ToString("dd/MM/yyyy");
+            }
+
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show(dgvListAcc.Columns["sex"].);
         }
     }
 }

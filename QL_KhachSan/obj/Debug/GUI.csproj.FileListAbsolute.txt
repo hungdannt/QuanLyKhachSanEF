@@ -32,3 +32,5 @@ C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\DAO.pdb
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\DAO.dll.config
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\EntityFramework.xml
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.GUI_Admin.UCHome.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmAddUser.resources

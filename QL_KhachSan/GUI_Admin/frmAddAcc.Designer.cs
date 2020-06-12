@@ -151,6 +151,7 @@
             this.txtTenDangNhap.Size = new System.Drawing.Size(383, 52);
             this.txtTenDangNhap.TabIndex = 2;
             this.txtTenDangNhap.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTenDangNhap.OnValueChanged += new System.EventHandler(this.txtTenDangNhap_OnValueChanged);
             // 
             // label5
             // 
@@ -179,7 +180,6 @@
             this.cbbChucVu.selectedIndex = -1;
             this.cbbChucVu.Size = new System.Drawing.Size(383, 45);
             this.cbbChucVu.TabIndex = 5;
-            this.cbbChucVu.onItemSelected += new System.EventHandler(this.bunifuDropdown1_onItemSelected);
             // 
             // txtCMND
             // 

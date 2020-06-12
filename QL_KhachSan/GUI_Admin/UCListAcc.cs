@@ -104,10 +104,7 @@ namespace QL_KhachSan
 
         }
 
-        private void dgvListAcc_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+   
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -120,6 +117,7 @@ namespace QL_KhachSan
                 frm.ShowDialog();
                 this.ParentForm.Opacity = 1;
                 dgvListAcc.DataSource = BUS_Account.GetAllAccount();
+
 
             }
 

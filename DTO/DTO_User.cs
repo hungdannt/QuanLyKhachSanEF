@@ -14,6 +14,21 @@ namespace DTO
         public DateTime NgaySinh { get; set; }
         public bool Sex { get; set; }
         public string SDT { get; set; }
-        public string DiaChi { get; set; }    
+        public string DiaChi { get; set; }
+
+
+        public DTO_User(int cmnd, string hoten, DateTime ngaysinh, bool sex, string sdt, string diachi)
+        {
+            this.CMND = cmnd;
+            this.HoTen = hoten;
+            this.NgaySinh = ngaysinh;
+            this.Sex = sex;
+            this.SDT = sdt;
+            this.DiaChi = diachi;
+        }
+        public DTO_User()
+        {
+
+        }
     }
 }

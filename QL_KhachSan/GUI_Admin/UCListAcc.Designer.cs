@@ -31,19 +31,17 @@ namespace QL_KhachSan
         private void InitializeComponent()
         {
             System.Windows.Forms.Label label1;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCListAcc));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvListAcc = new System.Windows.Forms.DataGridView();
-            this.btnEdit = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnDanhSachNV = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnDel = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnAdd = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEdit = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnDel = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAdd = new Bunifu.Framework.UI.BunifuFlatButton();
             label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListAcc)).BeginInit();
             this.SuspendLayout();
@@ -69,14 +67,14 @@ namespace QL_KhachSan
             this.dgvListAcc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListAcc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvListAcc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListAcc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(72)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListAcc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvListAcc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListAcc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -84,172 +82,25 @@ namespace QL_KhachSan
             this.Column2,
             this.Column3,
             this.Column5});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvListAcc.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvListAcc.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvListAcc.EnableHeadersVisualStyles = false;
             this.dgvListAcc.Location = new System.Drawing.Point(0, 61);
             this.dgvListAcc.Name = "dgvListAcc";
             this.dgvListAcc.ReadOnly = true;
             this.dgvListAcc.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
-            this.dgvListAcc.RowTemplate.Height = 40;
+            this.dgvListAcc.RowTemplate.Height = 43;
             this.dgvListAcc.Size = new System.Drawing.Size(1279, 619);
             this.dgvListAcc.TabIndex = 10;
-            this.dgvListAcc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListAcc_CellContentClick);
             this.dgvListAcc.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvListAcc_CellMouseClick);
             this.dgvListAcc.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvListAcc_RowHeaderMouseClick);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnEdit.BackColor = System.Drawing.Color.Gray;
-            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEdit.BorderRadius = 0;
-            this.btnEdit.ButtonText = "Edit";
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.DisabledColor = System.Drawing.Color.Gray;
-            this.btnEdit.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnEdit.Iconimage = global::QL_KhachSan.Properties.Resources.edit_50px;
-            this.btnEdit.Iconimage_right = null;
-            this.btnEdit.Iconimage_right_Selected = null;
-            this.btnEdit.Iconimage_Selected = null;
-            this.btnEdit.IconMarginLeft = 0;
-            this.btnEdit.IconMarginRight = 0;
-            this.btnEdit.IconRightVisible = true;
-            this.btnEdit.IconRightZoom = 0D;
-            this.btnEdit.IconVisible = true;
-            this.btnEdit.IconZoom = 40D;
-            this.btnEdit.IsTab = false;
-            this.btnEdit.Location = new System.Drawing.Point(330, 702);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Normalcolor = System.Drawing.Color.Gray;
-            this.btnEdit.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnEdit.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnEdit.selected = false;
-            this.btnEdit.Size = new System.Drawing.Size(120, 61);
-            this.btnEdit.TabIndex = 13;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Textcolor = System.Drawing.Color.White;
-            this.btnEdit.TextFont = new System.Drawing.Font("Calibri", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnDanhSachNV
-            // 
-            this.btnDanhSachNV.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
-            this.btnDanhSachNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
-            this.btnDanhSachNV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDanhSachNV.BorderRadius = 0;
-            this.btnDanhSachNV.ButtonText = "Danh Sách Nhân Viên";
-            this.btnDanhSachNV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDanhSachNV.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDanhSachNV.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnDanhSachNV.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDanhSachNV.Iconimage")));
-            this.btnDanhSachNV.Iconimage_right = null;
-            this.btnDanhSachNV.Iconimage_right_Selected = null;
-            this.btnDanhSachNV.Iconimage_Selected = null;
-            this.btnDanhSachNV.IconMarginLeft = 0;
-            this.btnDanhSachNV.IconMarginRight = 0;
-            this.btnDanhSachNV.IconRightVisible = true;
-            this.btnDanhSachNV.IconRightZoom = 0D;
-            this.btnDanhSachNV.IconVisible = true;
-            this.btnDanhSachNV.IconZoom = 90D;
-            this.btnDanhSachNV.IsTab = false;
-            this.btnDanhSachNV.Location = new System.Drawing.Point(795, 702);
-            this.btnDanhSachNV.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.btnDanhSachNV.Name = "btnDanhSachNV";
-            this.btnDanhSachNV.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
-            this.btnDanhSachNV.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnDanhSachNV.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnDanhSachNV.selected = false;
-            this.btnDanhSachNV.Size = new System.Drawing.Size(323, 61);
-            this.btnDanhSachNV.TabIndex = 13;
-            this.btnDanhSachNV.Text = "Danh Sách Nhân Viên";
-            this.btnDanhSachNV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDanhSachNV.Textcolor = System.Drawing.Color.White;
-            this.btnDanhSachNV.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDanhSachNV.Click += new System.EventHandler(this.btnDanhSachNV_Click);
-            // 
-            // btnDel
-            // 
-            this.btnDel.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnDel.BackColor = System.Drawing.Color.Gray;
-            this.btnDel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDel.BorderRadius = 0;
-            this.btnDel.ButtonText = "Del";
-            this.btnDel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDel.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDel.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDel.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnDel.Iconimage = global::QL_KhachSan.Properties.Resources.delete_bin_100px;
-            this.btnDel.Iconimage_right = null;
-            this.btnDel.Iconimage_right_Selected = null;
-            this.btnDel.Iconimage_Selected = null;
-            this.btnDel.IconMarginLeft = 0;
-            this.btnDel.IconMarginRight = 0;
-            this.btnDel.IconRightVisible = true;
-            this.btnDel.IconRightZoom = 0D;
-            this.btnDel.IconVisible = true;
-            this.btnDel.IconZoom = 40D;
-            this.btnDel.IsTab = false;
-            this.btnDel.Location = new System.Drawing.Point(485, 702);
-            this.btnDel.Margin = new System.Windows.Forms.Padding(6);
-            this.btnDel.Name = "btnDel";
-            this.btnDel.Normalcolor = System.Drawing.Color.Gray;
-            this.btnDel.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnDel.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnDel.selected = false;
-            this.btnDel.Size = new System.Drawing.Size(120, 61);
-            this.btnDel.TabIndex = 13;
-            this.btnDel.Text = "Del";
-            this.btnDel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDel.Textcolor = System.Drawing.Color.White;
-            this.btnDel.TextFont = new System.Drawing.Font("Calibri", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.BorderRadius = 0;
-            this.btnAdd.ButtonText = "Add";
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAdd.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAdd.Iconimage = global::QL_KhachSan.Properties.Resources.add_60px;
-            this.btnAdd.Iconimage_right = null;
-            this.btnAdd.Iconimage_right_Selected = null;
-            this.btnAdd.Iconimage_Selected = null;
-            this.btnAdd.IconMarginLeft = 0;
-            this.btnAdd.IconMarginRight = 0;
-            this.btnAdd.IconRightVisible = true;
-            this.btnAdd.IconRightZoom = 0D;
-            this.btnAdd.IconVisible = true;
-            this.btnAdd.IconZoom = 50D;
-            this.btnAdd.IsTab = false;
-            this.btnAdd.Location = new System.Drawing.Point(182, 702);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(6);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnAdd.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnAdd.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAdd.selected = false;
-            this.btnAdd.Size = new System.Drawing.Size(120, 61);
-            this.btnAdd.TabIndex = 13;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Textcolor = System.Drawing.Color.White;
-            this.btnAdd.TextFont = new System.Drawing.Font("Calibri", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // Column1
             // 
@@ -302,6 +153,116 @@ namespace QL_KhachSan
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             // 
+            // btnEdit
+            // 
+            this.btnEdit.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnEdit.BackColor = System.Drawing.Color.Gray;
+            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEdit.BorderRadius = 0;
+            this.btnEdit.ButtonText = "Edit";
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEdit.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnEdit.Iconimage = global::QL_KhachSan.Properties.Resources.edit_50px;
+            this.btnEdit.Iconimage_right = null;
+            this.btnEdit.Iconimage_right_Selected = null;
+            this.btnEdit.Iconimage_Selected = null;
+            this.btnEdit.IconMarginLeft = 0;
+            this.btnEdit.IconMarginRight = 0;
+            this.btnEdit.IconRightVisible = true;
+            this.btnEdit.IconRightZoom = 0D;
+            this.btnEdit.IconVisible = true;
+            this.btnEdit.IconZoom = 40D;
+            this.btnEdit.IsTab = false;
+            this.btnEdit.Location = new System.Drawing.Point(227, 707);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Normalcolor = System.Drawing.Color.Gray;
+            this.btnEdit.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnEdit.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnEdit.selected = false;
+            this.btnEdit.Size = new System.Drawing.Size(120, 61);
+            this.btnEdit.TabIndex = 13;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEdit.Textcolor = System.Drawing.Color.White;
+            this.btnEdit.TextFont = new System.Drawing.Font("Calibri", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDel.BackColor = System.Drawing.Color.Gray;
+            this.btnDel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDel.BorderRadius = 0;
+            this.btnDel.ButtonText = "Del";
+            this.btnDel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDel.DisabledColor = System.Drawing.Color.Gray;
+            this.btnDel.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnDel.Iconimage = global::QL_KhachSan.Properties.Resources.delete_bin_100px;
+            this.btnDel.Iconimage_right = null;
+            this.btnDel.Iconimage_right_Selected = null;
+            this.btnDel.Iconimage_Selected = null;
+            this.btnDel.IconMarginLeft = 0;
+            this.btnDel.IconMarginRight = 0;
+            this.btnDel.IconRightVisible = true;
+            this.btnDel.IconRightZoom = 0D;
+            this.btnDel.IconVisible = true;
+            this.btnDel.IconZoom = 40D;
+            this.btnDel.IsTab = false;
+            this.btnDel.Location = new System.Drawing.Point(432, 707);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(6);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Normalcolor = System.Drawing.Color.Gray;
+            this.btnDel.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnDel.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnDel.selected = false;
+            this.btnDel.Size = new System.Drawing.Size(120, 61);
+            this.btnDel.TabIndex = 13;
+            this.btnDel.Text = "Del";
+            this.btnDel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDel.Textcolor = System.Drawing.Color.White;
+            this.btnDel.TextFont = new System.Drawing.Font("Calibri", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(54)))), ((int)(((byte)(79)))));
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.BorderRadius = 0;
+            this.btnAdd.ButtonText = "Add";
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAdd.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAdd.Iconimage = global::QL_KhachSan.Properties.Resources.add_60px;
+            this.btnAdd.Iconimage_right = null;
+            this.btnAdd.Iconimage_right_Selected = null;
+            this.btnAdd.Iconimage_Selected = null;
+            this.btnAdd.IconMarginLeft = 0;
+            this.btnAdd.IconMarginRight = 0;
+            this.btnAdd.IconRightVisible = true;
+            this.btnAdd.IconRightZoom = 0D;
+            this.btnAdd.IconVisible = true;
+            this.btnAdd.IconZoom = 50D;
+            this.btnAdd.IsTab = false;
+            this.btnAdd.Location = new System.Drawing.Point(27, 707);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAdd.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnAdd.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAdd.selected = false;
+            this.btnAdd.Size = new System.Drawing.Size(120, 61);
+            this.btnAdd.TabIndex = 13;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.Textcolor = System.Drawing.Color.White;
+            this.btnAdd.TextFont = new System.Drawing.Font("Calibri", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // UCListAcc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -309,7 +270,6 @@ namespace QL_KhachSan
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Controls.Add(label1);
             this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnDanhSachNV);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvListAcc);
@@ -326,7 +286,6 @@ namespace QL_KhachSan
         private System.Windows.Forms.DataGridView dgvListAcc;
         private Bunifu.Framework.UI.BunifuFlatButton btnAdd;
         private Bunifu.Framework.UI.BunifuFlatButton btnDel;
-        private Bunifu.Framework.UI.BunifuFlatButton btnDanhSachNV;
         private Bunifu.Framework.UI.BunifuFlatButton btnEdit;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column4;
