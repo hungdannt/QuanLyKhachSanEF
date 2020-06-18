@@ -3,13 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "QL_KhachSan\GUI.csproj", "{DCF0DBB1-793B-42D0-A34C-DD0F06D12A58}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{2E237A92-2740-4988-9379-75C8DAFE47E4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS", "BUS\BUS.csproj", "{CE56D7C7-D6A0-49E4-84AA-FE4E3E713E31}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{A720BD09-50C2-4F34-84D0-C8AC3891EF75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KhachSanPRO", "QL_KhachSan\KhachSanPRO.csproj", "{DCF0DBB1-793B-42D0-A34C-DD0F06D12A58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +15,6 @@ Global
 		{DCF0DBB1-793B-42D0-A34C-DD0F06D12A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCF0DBB1-793B-42D0-A34C-DD0F06D12A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCF0DBB1-793B-42D0-A34C-DD0F06D12A58}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2E237A92-2740-4988-9379-75C8DAFE47E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E237A92-2740-4988-9379-75C8DAFE47E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E237A92-2740-4988-9379-75C8DAFE47E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E237A92-2740-4988-9379-75C8DAFE47E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE56D7C7-D6A0-49E4-84AA-FE4E3E713E31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE56D7C7-D6A0-49E4-84AA-FE4E3E713E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE56D7C7-D6A0-49E4-84AA-FE4E3E713E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE56D7C7-D6A0-49E4-84AA-FE4E3E713E31}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A720BD09-50C2-4F34-84D0-C8AC3891EF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A720BD09-50C2-4F34-84D0-C8AC3891EF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A720BD09-50C2-4F34-84D0-C8AC3891EF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A720BD09-50C2-4F34-84D0-C8AC3891EF75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

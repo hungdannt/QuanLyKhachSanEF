@@ -6,9 +6,7 @@ C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmLe
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmLogin.resources
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmSplashScreen.resources
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.Properties.Resources.resources
-C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCAccount.resources
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCDatPhong.resources
-C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCDoiPass.resources
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCHoaDon.resources
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCListNhanVien.resources
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCListAcc.resources
@@ -34,3 +32,4 @@ C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\bin\Debug\EntityFramework.x
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.GUI_Admin.UCHome.resources
 C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.frmAddUser.resources
+C:\Users\Blay\Documents\QuanLyKhachSanEF\QL_KhachSan\obj\Debug\QL_KhachSan.UCInfo.resources
