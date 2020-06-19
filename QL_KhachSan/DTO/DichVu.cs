@@ -14,7 +14,7 @@ namespace DTO
         public DichVu()
         {
             this.PhieuDichVus = new HashSet<PhieuDichVu>();
-        }
+        }   
         
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

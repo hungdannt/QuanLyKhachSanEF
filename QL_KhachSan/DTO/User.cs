@@ -36,37 +36,6 @@ namespace DTO
 
         public virtual ICollection<Account> Accounts { get; set; }
 
-        public static List<User> GetAll()
-        {
-            KhachSanContext context = new KhachSanContext();
-            return context.Users.ToList();
-        }
-        public static User GetUser(int cmnd)
-        {
-            KhachSanContext context = new KhachSanContext();
-            return context.Users.Where(p => p.CMND == cmnd).FirstOrDefault();
-        }
-
-        public static void Delete(int cmnd)
-        {
-            KhachSanContext context = new KhachSanContext();
-            User u = context.Users.Where(p => p.CMND == cmnd).FirstOrDefault();
-            try
-            {
-                context.Users.Remove(u);
-                context.SaveChanges();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
-
-        public void InsertUpdate()
-        {
-            KhachSanContext context = new KhachSanContext();
-            context.Users.AddOrUpdate(this);
-            context.SaveChanges();
-        }
+     
     }
 }

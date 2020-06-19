@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BUS;
+using BLL;
 
 namespace QL_KhachSan.GUI_Admin
 {
@@ -61,11 +61,11 @@ namespace QL_KhachSan.GUI_Admin
                 circleSLTaiKhoan.Value = 0;
             }
             circleSLTaiKhoan.Value += 20;
-            txtSLNhanVien.Text = BUS_User.GetAllUser().Count().ToString();
-            txtSLAdmin.Text = BUS_Account.GetAllAccount().Where(p => p.ChucVu == "Admin").ToList().Count().ToString();
-            txtSLLeTan.Text = BUS_Account.GetAllAccount().Where(p => p.ChucVu == "Lễ Tân").ToList().Count().ToString();
-            txtSLKinhDoanh.Text = BUS_Account.GetAllAccount().Where(p => p.ChucVu == "Kinh Doanh").ToList().Count().ToString();
-            txtSLTK.Text = BUS_Account.GetAllAccount().Count().ToString();
+            txtSLNhanVien.Text = BLL_User.Instance.GetAll().Count().ToString();
+            txtSLAdmin.Text = BLL_Account.Instance.GetAll().Where(p => p.ChucVu == "Admin").ToList().Count().ToString();
+            txtSLLeTan.Text = BLL_Account.Instance.GetAll().Where(p => p.ChucVu == "Lễ Tân").ToList().Count().ToString();
+            txtSLKinhDoanh.Text = BLL_Account.Instance.GetAll().Where(p => p.ChucVu == "Kinh Doanh").ToList().Count().ToString();
+            txtSLTK.Text = BLL_Account.Instance.GetAll().Count().ToString();
 
         }
 

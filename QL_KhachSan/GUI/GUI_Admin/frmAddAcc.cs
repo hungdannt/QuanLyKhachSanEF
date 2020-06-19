@@ -1,4 +1,4 @@
-﻿using BUS;
+﻿using BLL;
 using DTO;
 using System;
 using System.Collections.Generic;
@@ -10,13 +10,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace QL_KhachSan
 {
     public partial class frmAddAcc : Form
     {
         private int key;
-        private string msg;
         public frmAddAcc(int key)
         {
             this.key = key;
@@ -42,7 +42,7 @@ namespace QL_KhachSan
             botro.ApplyElipse(txtCMND, 40);
             if (key != 0)
             {
-                DTO_Account acc = BUS_Account.GetAccount(key);
+                Account acc = BLL_Account.Instance.Get(key);
                 txtCMND.Text = acc.CMND.ToString();
                 txtTenDangNhap.Text = acc.TenDangNhap;
                 string chucvu = acc.ChucVu;
@@ -62,65 +62,60 @@ namespace QL_KhachSan
                 txtPass.Text = null;
                 txtPass.Focus();
                 txtPassRepeat.Text = null;
-                msg = "Sửa thành công";
-
-
             }
-
-
         }
-
-       
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            try
-            {
+          
                 if (txtCMND.Text == "" || txtPass.Text == "" || txtTenDangNhap.Text == "")
                 {
                     Alert("Vui lòng điền đầy đủ", frmAlert.Type.Info);
                 }
                 if (txtPass.Text.Equals(txtPassRepeat.Text) && txtPassRepeat.Text != "")
                 {
-                    DTO_Account acc = new DTO_Account();
-                    int stt = BUS_Account.GetAllAccount().Count();
+                    int stt = BLL_Account.Instance.GetAll().Count();
+                    if (key == 0)
+                    {
+                        stt += 1;
+                        if (BLL_Account.Instance.Add
+                                (
+                                stt,
+                                Convert.ToInt32(txtCMND.Text),
+                                txtTenDangNhap.Text,
+                                BLL_Account.Instance.MaHoa(txtPassRepeat.Text),
+                                cbbChucVu.selectedValue.ToString()
+                                )
+                            )
+                        {
+                            Alert("Đã thêm thành công", frmAlert.Type.Success);
+                        }
+                        else
+                        {
+                            Alert("Đã xảy ra lỗi", frmAlert.Type.Error);
+
+                        }
+                    }
                     if (key != 0)
                     {
-                        acc.STT = stt;
-
-                    }
-                    else
-                    {
-                        acc.STT = stt + 1;
-                    }
-                    acc.CMND = Convert.ToInt32(txtCMND.Text);
-                    acc.TenDangNhap = txtTenDangNhap.Text;
-                    acc.MatKhau = BUS_Account.MaHoa(txtPassRepeat.Text);
-                    acc.ChucVu = cbbChucVu.selectedValue.ToString();
-                    if (key != 0)
-                    {
-                        acc.TenDangNhap = txtTenDangNhap.Text;
-                        acc.MatKhau = BUS_Account.MaHoa(txtPassRepeat.Text);
-                        acc.ChucVu = cbbChucVu.selectedValue.ToString();
-                        BUS_Account.InsertUpdate(acc);
-                        Alert(msg, frmAlert.Type.Success);
-
-                    }
-                    else
-                    {
-                        BUS_Account.InsertUpdate(acc);
-                        msg = "Đã thêm thành công ^^";
-                        Alert(msg, frmAlert.Type.Success);
-                    }
+                        if (BLL_Account.Instance.Update
+                                (
+                                stt,
+                                Convert.ToInt32(txtCMND.Text),
+                                txtTenDangNhap.Text,
+                                BLL_Account.Instance.MaHoa(txtPassRepeat.Text),
+                                cbbChucVu.selectedValue.ToString()
+                                )
+                           )
+                        {
+                            Alert("Đã sửa thành công", frmAlert.Type.Success);
+                        }
+                        else
+                        {
+                            Alert("Đã xảy ra lỗi", frmAlert.Type.Error);
+                        }
+                    }                 
                 }
-                
-
-            }
-            catch (Exception)
-            {
-
-                Alert("Hãy thêm hồ sơ người này trước!", frmAlert.Type.Error);
-            }
 
         }
 
@@ -165,12 +160,12 @@ namespace QL_KhachSan
             if (key == 0)
             {
                 errorProvider1.SetError(txtTenDangNhap, "");
-                if (BUS_Account.GetAllAccount().SingleOrDefault(p => p.TenDangNhap == txtTenDangNhap.Text) != null)
+                if (BLL_Account.Instance.GetAll().SingleOrDefault(p => p.TenDangNhap == txtTenDangNhap.Text) != null)
                 {
                     errorProvider1.SetError(txtTenDangNhap, "Tên đăng nhập đã tồn tại, xin nhập lại !");
                 }
             }
-           
+
         }
 
     }

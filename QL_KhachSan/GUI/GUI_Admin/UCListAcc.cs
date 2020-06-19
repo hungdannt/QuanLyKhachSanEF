@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BUS;
 using System.Threading;
+using BLL;
 
 namespace QL_KhachSan
 {
@@ -43,7 +43,7 @@ namespace QL_KhachSan
 
         private void UCListAcc_Load(object sender, EventArgs e)
         {
-            dgvListAcc.DataSource = BUS_Account.GetAllAccount();
+            dgvListAcc.DataSource = BLL_Account.Instance.GetAll();
 
 
         }
@@ -67,7 +67,7 @@ namespace QL_KhachSan
             this.ParentForm.Opacity = .55;
             frm.ShowDialog();
             this.ParentForm.Opacity = 1;
-            dgvListAcc.DataSource = BUS_Account.GetAllAccount();
+            dgvListAcc.DataSource = BLL_Account.Instance.GetAll();
 
 
         }
@@ -86,9 +86,9 @@ namespace QL_KhachSan
                 int key = Convert.ToInt32(r[0].Cells["Column1"].Value.ToString());
                 try
                 {
-                    BUS_Account.Delete(key);
+                    BLL_Account.Instance.Delete(key);
                     Alert("Đã xóa thành công ^^", frmAlert.Type.Success);
-                    dgvListAcc.DataSource = BUS_Account.GetAllAccount();
+                    dgvListAcc.DataSource = BLL_Account.Instance.GetAll();
 
                 }
                 catch (Exception)
@@ -116,7 +116,7 @@ namespace QL_KhachSan
                 this.ParentForm.Opacity = .55;
                 frm.ShowDialog();
                 this.ParentForm.Opacity = 1;
-                dgvListAcc.DataSource = BUS_Account.GetAllAccount();
+                dgvListAcc.DataSource = BLL_Account.Instance.GetAll();
 
 
             }

@@ -1,5 +1,6 @@
-﻿using BUS;
+﻿
 using DTO;
+using BLL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace QL_KhachSan
     public partial class frmLogin : Form
     {
         #region Khởi tạo form
-        List<DTO_Account> lst;
+        List<Account> lst;
         public frmLogin()
         {
             Thread thread = new Thread(new ThreadStart(() => Application.Run(new frmSplashScreen())));
@@ -24,7 +25,7 @@ namespace QL_KhachSan
         {
 
             this.Hide();
-            lst = BUS_Account.GetAllAccount();
+            lst = BLL_Account.Instance.GetAll();
             
         }
         #endregion
@@ -104,7 +105,7 @@ namespace QL_KhachSan
                     if (txtTen.Text == lst[i].TenDangNhap.ToString())
                     {
                         check = true;
-                        if (lst[i].MatKhau.ToString() == BUS_Account.MaHoa(txtPass.Text))
+                        if (lst[i].MatKhau.ToString() == BLL_Account.Instance.MaHoa(txtPass.Text))
                         {
 
 
@@ -118,7 +119,7 @@ namespace QL_KhachSan
                                 Alert("Đã đăng xuất!", frmAlert.Type.Info);
 
                                 this.Show();
-                                lst = BUS_Account.GetAllAccount();
+                                lst = BLL_Account.Instance.GetAll();
                                 
                                 txtPass.Text = null;
                             }

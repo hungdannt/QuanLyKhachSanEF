@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BUS;
-using DTO;
+using DTO;  
+using BLL;
 
 namespace QL_KhachSan
 {
@@ -35,7 +35,7 @@ namespace QL_KhachSan
         {
             panelInfo.Visible = true;
             panelChangePass.Visible = false;
-            DTO_User u = BUS_User.GetUser(cmnd);
+            User u = BLL_User.Instance.Get(cmnd);
             lbCMND.Text = u.CMND.ToString();
             lbHoTen.Text = u.HoTen;
             lbdiachi.Text = u.DiaChi;

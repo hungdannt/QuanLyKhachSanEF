@@ -1,4 +1,4 @@
-﻿using BUS;
+﻿using BLL;
 using DTO;
 using System;
 using System.Collections.Generic;
@@ -58,7 +58,7 @@ namespace QL_KhachSan
             this.ParentForm.Opacity = .55;
             frm.ShowDialog();
             this.ParentForm.Opacity = 1;
-            dgvListNV.DataSource = BUS_User.GetAllUser();
+            dgvListNV.DataSource = BLL_User.Instance.GetAll();
 
 
         }
@@ -77,9 +77,9 @@ namespace QL_KhachSan
                 int key = Convert.ToInt32(r[0].Cells["Column1"].Value.ToString());
                 try
                 {
-                    BUS_User.Delete(key);
+                    BLL_User.Instance.Delete(key);
                     Alert("Đã xóa thành công ^^", frmAlert.Type.Success);
-                    dgvListNV.DataSource = BUS_User.GetAllUser();
+                    dgvListNV.DataSource = BLL_User.Instance.GetAll();
                 }
                 catch (Exception)
                 {
@@ -107,7 +107,7 @@ namespace QL_KhachSan
                 this.ParentForm.Opacity = .55;
                 frm.ShowDialog();
                 this.ParentForm.Opacity = 1;
-                dgvListNV.DataSource = BUS_User.GetAllUser();
+                dgvListNV.DataSource = BLL_User.Instance.GetAll();
 
             }
 
@@ -123,7 +123,7 @@ namespace QL_KhachSan
 
         private void UCListNhanVien_Load(object sender, EventArgs e)
         {
-            List<DTO_User> lst = BUS_User.GetAllUser();
+            List<User> lst = BLL_User.Instance.GetAll();
             //foreach (var item in lst)
             //{
             //    if (item.Sex)
@@ -132,7 +132,7 @@ namespace QL_KhachSan
             //    }
             //}
 
-            dgvListNV.DataSource = BUS_User.GetAllUser();
+            dgvListNV.DataSource = BLL_User.Instance.GetAll();
         }
 
         private void dgvListAcc_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)

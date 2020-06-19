@@ -44,19 +44,38 @@ namespace QL_KhachSan
 
             context.Users.Add(new User
             {
-                CMND = 213456789,
+                CMND = 213456987,
                 HoTen = "Hồ Hải Đăng ",
                 DiaChi = "76 Lý Thái Tổ",
                 GioiTinh = true,
                 SDT = "098354343",
                 NgaySinh = new DateTime(2000, 11, 27)
             });
-            context.Accounts.Add(new ac
+            context.Accounts.Add(new Account
             {
-                cm
-            })
+                STT = 1,
+                CMND = 213456789,
+                ChucVu = "Admin",
+                MatKhau = "32FBCC47E36E7B40EF91A101072AE0F3",
+                TenDangNhap = "admin"
+            });
+            context.Accounts.Add(new Account
+            {
+                STT = 2,
+                CMND = 123456789,
+                ChucVu = "Lễ Tân",
+                MatKhau = "21FDB736D09169660FB4A80ED2EEEF7D",
+                TenDangNhap = "linhkute"
+            });
 
-
+            context.Accounts.Add(new Account
+            {
+                STT = 3,
+                CMND = 213456987,
+                ChucVu = "Kinh Doanh",
+                MatKhau = "87221652A79FC3C9B04CDE0B335FDD5B",
+                TenDangNhap = "kinhdoanh123"
+            });
         }
     }
 }

@@ -87,12 +87,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\BUS_Account.cs" />
-    <Compile Include="BLL\BUS_User.cs" />
-    <Compile Include="BLL\DAO_Account.cs" />
-    <Compile Include="BLL\DAO_User.cs" />
-    <Compile Include="DTO\DTO_Account.cs" />
-    <Compile Include="DTO\DTO_User.cs" />
+    <Compile Include="BLL\BLL_Account.cs" />
+    <Compile Include="BLL\BLL_User.cs" />
     <Compile Include="GUI\GUI_Admin\frmAddUser.cs">
       <SubType>Form</SubType>
     </Compile>

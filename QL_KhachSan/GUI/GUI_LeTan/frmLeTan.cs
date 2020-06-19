@@ -1,4 +1,5 @@
-﻿using BUS;
+﻿using BLL;
+
 using DTO;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace QL_KhachSan
     public partial class frmLeTan : Form
     {
         private int id;
-        private static DTO_Account a = new DTO_Account(); 
+        private static Account a;
         public frmLeTan(int id)
         {
             this.id = id;
@@ -31,18 +32,6 @@ namespace QL_KhachSan
             panel3.Top = c.Top;
 
         }
-
-        private void bunifuTextbox1_OnTextChange(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCustomTextbox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-      
 
         private void panel4_MouseUp(object sender, MouseEventArgs e)
         {
@@ -76,21 +65,17 @@ namespace QL_KhachSan
             
            
         }
-
-      
       
         private void frmLeTan_Load(object sender, EventArgs e)
         {
-            a = BUS_Account.GetAccount(id);
+            a = BLL_Account.Instance.Get(id);
 
-            lbNameWelCome.Text = BUS_User.GetUser(a.CMND).HoTen;
+            lbNameWelCome.Text = a.User.HoTen;
             MoveSidePanel(btnAccount);
 
             UCInfo.Instance.Dock = DockStyle.Fill;
             panelNV.Controls.Add(UCInfo.Instance);
             UCInfo.Instance.ShowInfo(a.CMND);
-
-
         }
 
         private void btnAccount_Click(object sender, EventArgs e)
@@ -121,13 +106,6 @@ namespace QL_KhachSan
             {
                 UCHoaDon.Instance.BringToFront();
             }
-
-
-
-
-
-
-
         }
 
         private void btnLapDV_Click(object sender, EventArgs e)
@@ -139,14 +117,11 @@ namespace QL_KhachSan
                 UCPhieuDV.Instance.Dock = DockStyle.Fill;
                 panelNV.Controls.Add(UCPhieuDV.Instance);
                 UCPhieuDV.Instance.BringToFront();
-
             }
             else
             {
                 UCPhieuDV.Instance.BringToFront();
             }
-
-
         }
 
         private void btnDoiPass_Click(object sender, EventArgs e)
@@ -166,15 +141,6 @@ namespace QL_KhachSan
             
 
         }
-
-    
-
-
-
-    
-
-   
-      
 
         private void btnLogout_Click(object sender, EventArgs e)
         {

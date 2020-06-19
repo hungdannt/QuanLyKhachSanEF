@@ -1,4 +1,4 @@
-﻿using BUS;
+﻿using BLL;
 using DTO;
 using QL_KhachSan.GUI_Admin;
 using System;
@@ -17,11 +17,11 @@ namespace QL_KhachSan
     public partial class frmAdmin : Form
     {
         private int stt;
-        private DTO_Account thisacc;
+        private Account thisacc;
         public frmAdmin(int stt)
         {
             this.stt = stt;
-            this.thisacc = BUS_Account.GetAccount(stt);
+            this.thisacc = BLL_Account.Instance.Get(stt);
             InitializeComponent();
         }
         #region Hàm gọi MessageBox
@@ -44,7 +44,7 @@ namespace QL_KhachSan
 
         private void frmAdmin_Load(object sender, EventArgs e)
         {
-            lbAvatarName.Text = BUS_User.GetUser(thisacc.CMND).HoTen;
+            lbAvatarName.Text = BLL_User.Instance.Get(thisacc.CMND).HoTen;
             timer1.Start();
             lbDate.Text = DateTime.Now.ToLongDateString();
             MoveSidePanel(btnHome);
@@ -68,7 +68,6 @@ namespace QL_KhachSan
                 UCHome.Instance.Dock = DockStyle.Fill;
                 panelNV.Controls.Add(UCHome.Instance);
                 UCHome.Instance.BringToFront();
-
             }
             else
             {
@@ -106,10 +105,6 @@ namespace QL_KhachSan
             this.Opacity = .55;
             frm.ShowDialog();
             this.Opacity = 1;
-
-
-
-
         }
         #region Hàm di chuyển vị trí form
         int mouseX = 0, mouseY = 0;
